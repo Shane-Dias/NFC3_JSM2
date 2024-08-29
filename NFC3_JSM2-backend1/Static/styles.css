@@ -24,6 +24,42 @@ header p {
 
 /* Existing styles... */
 
+/* Style for the container to ensure vertical alignment */
+.container {
+    display: flex;
+    flex-direction: column; /* Ensure children are stacked vertically */
+    align-items: center; /* Center-align children horizontally */
+    justify-content: center; /* Center-align children vertically */
+    max-width: 600px; /* Adjust based on your design */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Style for the 'Back to Home' button */
+.button {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin to separate from other elements */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
 .adopt-button {
     background-color: #ff4d4d; /* Pinkish-red color */
     color: #fff;
@@ -48,17 +84,6 @@ header p {
 }
 
 
-.container {
-    display: flex; /* Enable flex layout for two columns */
-    max-width: 1000px;
-    margin: 20px auto;
-    background: url('') no-repeat center center fixed;
-    background-size: cover; /* Ensure the video covers the entire container */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
 
 .book-cover {
     flex: 1; /* Adjust the width of the left column */
