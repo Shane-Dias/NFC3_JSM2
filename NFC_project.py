@@ -1,7 +1,8 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-
+import pandas as pd
+from sqlalchemy import create_engine
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///default.db'
 app.config["SQLALCHEMY_BINDS"] = {
@@ -15,7 +16,6 @@ app.config["SQLALCHEMY_BINDS"] = {
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
-# Define models
 class Users(db.Model):
     __bind_key__ = "db1"
     sno = db.Column(db.Integer, primary_key=True)
@@ -29,15 +29,100 @@ class Users(db.Model):
         self.password = password
         self.email = email
 
-# Other models (Dogs, cats, sea_creatures, oanimals, history) follow the same pattern...
+class oanimals(db.Model):
+    __bind_key__ = "db2"
+    sno = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80), nullable=False)
+    breed = db.Column(db.String(80), nullable=False)
+    sex = db.Column(db.String(80), nullable=False)
+    age = db.Column(db.Integer,nullable=False)
+    size = db.Column(db.String(80), nullable=False)
+    desc = db.Column(db.String(200), nullable=False)
+    def __init__(self, name, breed, sex,age,size,desc):
+        self.name = name
+        self.breed = breed
+        self.sex = sex
+        self.age = age
+        self.size = size
+        self.desc = desc
 
-# Initialize tables within app context
+class cats(db.Model):
+    __bind_key__ = "db3"
+    sno = db.Column(db.Integer, primary_key=True)
+    date_created = db.Column(db.DateTime, default=datetime.now)
+    name = db.Column(db.String(80), nullable=False)
+    breed = db.Column(db.String(80), nullable=False)
+    sex = db.Column(db.String(80), nullable=False)
+    age = db.Column(db.Integer,nullable=False)
+    size = db.Column(db.String(80), nullable=False)
+    desc = db.Column(db.String(200), nullable=False)
+    def __init__(self, name, breed, sex,age,size,desc):
+        self.name = name
+        self.breed = breed
+        self.sex = sex
+        self.age = age
+        self.size = size
+        self.desc = desc
+
+class sea_Creatures(db.Model):
+    __bind_key__ = "db4"
+    sno = db.Column(db.Integer, primary_key=True)
+    date_created = db.Column(db.DateTime, default=datetime.now)
+    name = db.Column(db.String(80), nullable=False)
+    breed = db.Column(db.String(80), nullable=False)
+    sex = db.Column(db.String(80), nullable=False)
+    age = db.Column(db.Integer,nullable=False)
+    size = db.Column(db.String(80), nullable=False)
+    desc = db.Column(db.String(200), nullable=False)
+    def __init__(self, name, breed, sex,age,size,desc):
+        self.name = name
+        self.breed = breed
+        self.sex = sex
+        self.age = age
+        self.size = size
+        self.desc = desc
+
+class dogs(db.Model):
+    __bind_key__ = "db5"
+    sno = db.Column(db.Integer, primary_key=True)
+    date_created = db.Column(db.DateTime, default=datetime.now)
+    name = db.Column(db.String(80), nullable=False)
+    breed = db.Column(db.String(80), nullable=False)
+    sex = db.Column(db.String(80), nullable=False)
+    age = db.Column(db.Integer,nullable=False)
+    size = db.Column(db.String(80), nullable=False)
+    desc = db.Column(db.String(200), nullable=False)
+    def __init__(self, name, breed, sex,age,size,desc):
+        self.name = name
+        self.breed = breed
+        self.sex = sex
+        self.age = age
+        self.size = size
+        self.desc = desc
+
+class history(db.Model):
+    __bind_key__ = "db6"
+    sno = db.Column(db.Integer, primary_key=True)
+    date_created = db.Column(db.DateTime, default=datetime.now)
+    name = db.Column(db.String(80), nullable=False)
+    breed = db.Column(db.String(80), nullable=False)
+    sex = db.Column(db.String(80), nullable=False)
+    age = db.Column(db.Integer,nullable=False)
+    size = db.Column(db.String(80), nullable=False)
+    desc = db.Column(db.String(200), nullable=False)
+    def __init__(self, name, breed, sex,age,size,desc):
+        self.name = name
+        self.breed = breed
+        self.sex = sex
+        self.age = age
+        self.size = size
+        self.desc = desc
+
 with app.app_context():
     db.create_all()
 
 @app.route('/')
 def hello_world():
-     # Return the template
     return render_template("index.html")
 
 @app.route('/login')
