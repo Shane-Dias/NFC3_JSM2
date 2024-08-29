@@ -1,0 +1,201 @@
+.admin-title {
+  margin-top: -229px;
+  border: 0;
+  background-color: #e37a19;
+  height: 190px;
+  width: auto;
+  outline: 0;
+  align-self: stretch;
+  border-radius: 27px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 54px 35px;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xl);
+  color: #200909;
+}
+.manage-adoptions,
+.manage-pets {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+}
+.manage-adoptions {
+  z-index: 1;
+}
+.admin-header,
+.management {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 31px;
+}
+.admin-header {
+  height: 622px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-23xl);
+  background-color: var(--color-sandybrown);
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 216px 0 311px;
+  box-sizing: border-box;
+  gap: 39px;
+}
+.admin-header-wrapper {
+  width: 232px;
+  flex-direction: column;
+  padding: var(--padding-59xl) 0 0;
+}
+.admin-header-wrapper,
+.pet-actions,
+.primary-navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.pet-actions {
+  border: 0;
+  background-color: var(--color-sandybrown);
+  height: 231px;
+  width: auto;
+  outline: 0;
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-23xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-6xl) 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.primary-navigation {
+  width: 284px;
+  flex-direction: column;
+  padding: var(--padding-59xl) 0 0;
+}
+.logout {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  line-height: 32px;
+  color: inherit;
+}
+.logout-header {
+  width: 280px;
+  border-radius: 24px;
+  background-color: #a70f0f;
+  overflow: hidden;
+  padding: var(--padding-smi) 49px var(--padding-xl) 55px;
+  box-sizing: border-box;
+}
+.logout-header,
+.records-header,
+.records-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.records-header {
+  border: 0;
+  background-color: var(--color-sandybrown);
+  height: 231px;
+  width: 284px;
+  outline: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-23xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: var(--padding-6xl) 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.records-header-wrapper {
+  align-self: stretch;
+}
+.logout-header-parent {
+  width: 407px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 13px;
+  max-width: 100%;
+  color: var(--color-white);
+}
+.root {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 11px var(--padding-smi) 702px 28px;
+  box-sizing: border-box;
+  gap: 64px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1350px) {
+  .root {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .admin-header {
+    padding-top: 140px;
+    padding-bottom: 202px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .admin-header-wrapper {
+    padding-top: 51px;
+    box-sizing: border-box;
+  }
+  .root {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .manage-adoptions,
+  .manage-pets {
+    font-size: var(--font-size-base);
+    line-height: 26px;
+  }
+  .admin-header {
+    padding-top: 91px;
+    padding-bottom: 131px;
+    box-sizing: border-box;
+  }
+  .logout {
+    font-size: var(--font-size-base);
+    line-height: 26px;
+  }
+  .logout-header {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .root {
+    gap: 16px;
+  }
+}
