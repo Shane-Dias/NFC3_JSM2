@@ -16,7 +16,7 @@ app.config["SQLALCHEMY_BINDS"] = {
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
-# Define models
+
 class Users(db.Model):
     __bind_key__ = "db1"
     sno = db.Column(db.Integer, primary_key=True)
@@ -30,9 +30,7 @@ class Users(db.Model):
         self.password = password
         self.email = email
 
-# Other models (Dogs, cats, sea_creatures, oanimals, history) follow the same pattern...
 
-# Initialize tables within app context
 with app.app_context():
     db.create_all()
 
