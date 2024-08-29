@@ -63,7 +63,7 @@
                 <div class="dropdown">
                   <button class="dropbtn">Login</button>
                   <div class="dropdown-content">
-                    <a href="/login">Adoptor</a>
+                    <a href="/login">Adopter</a>
                     <a href="#option2">Staff</a>
                   </div>
                 </div>
@@ -194,7 +194,92 @@
           <div class="container13"></div>
         </div>
       </section>
-      <h2 id="Public_Analytics">Public Analytics</h2>
+      <section class="sec_">
+        <h2 style="font-size: 2rem; color: #f27629; font-weight: 600">
+          Events & Campaigns
+        </h2>
+        <div
+          class="event_container"
+          id="event_container"
+          style="overflow: hidden"
+        >
+          <div class="event1">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+          <div class="event2">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+          <div class="event3">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+
+          <div class="event4">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+
+          <div class="event5">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+          <div class="event6">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+          <div class="event7">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+          <div class="event8">
+            <h5>Event1</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              quis? Illo temporibus iste saepe cupiditate dicta, aliquid dolorem
+              magni ratione?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Consequuntur nulla quo accusamus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <h2 id="Public_Analytics" style="margin-top: 20rem">Public Analytics</h2>
       <div
         class="Public_Analytics_div"
         style="margin-top: -105px; position: relative"
@@ -236,6 +321,7 @@
                 gap: 20px;
                 width: 100%;
                 margin-bottom: 20px;
+                margin-top: 15rem;
               }
 
               .chart-container {
@@ -1017,6 +1103,22 @@
           window.open("https://www.pinterest.com/petfinder/");
         });
       }
+      const container = document.getElementById("event_container");
+
+      function scrollContent() {
+        container.scrollTop += 1; // Scroll down by 1 pixel
+
+        // Check if we've reached the bottom
+        if (
+          container.scrollTop >=
+          container.scrollHeight - container.clientHeight
+        ) {
+          container.scrollTop = 0; // Reset to the top
+        }
+      }
+
+      // Set the interval to make the scrolling continuous
+      setInterval(scrollContent, 50); // Adjust the speed by changing the interval time
     </script>
   </body>
 </html>
