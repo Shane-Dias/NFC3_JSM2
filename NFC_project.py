@@ -1,8 +1,7 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-import pandas as pd
-from sqlalchemy import create_engine
+
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///default.db'
 app.config["SQLALCHEMY_BINDS"] = {
