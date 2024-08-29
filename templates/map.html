@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Controls</title>
+    <style>
+        #map {
+            height: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: {lat: 19.075983, lng: 72.877655} // Center map around a default location
+            });
+
+            // Array of locations for markers
+            var locations = [
+                {lat: 19.16811810335592, lng: 72.7900155200508, title: "Animal Matter To Me (AMTM) - Animal Hospital", Address: "CTS 166 / 167 Ashram, Madh - Marve Rd, Malad West, Mumbai, Maharashtra 400061"},
+                {lat: 18.9637, lng: 72.8235, title: "Breach Candy Veterinary Clinic", Address:"1st Floor, Dr. B. R. Ambedkar Road, Breach Candy, Mumbai, Maharashtra 400026"},
+                {lat: 19.0232, lng: 72.8232, title: "The Animal Medical Centre", Address:"14, S. V. Road, Near Worli Naka, Worli, Mumbai, Maharashtra 400030"},
+                {lat: 19.1211, lng: 72.8354, title: "Vets4Pets", Address:"Shop No. 6, Kantilal Building, Near Vishal Hall, Andheri West, Mumbai, Maharashtra 400058"},
+                {lat: 19.0204, lng: 72.8304, title: "Pet Vets Clinic", Address:"10, Nargis Sadan, Opp. Ruchi Restaurant, Lower Parel, Mumbai, Maharashtra 400013"},
+                {lat: 19.1374, lng: 72.8258, title: "Pawfect Veterinary Clinic", Address:"1, Kesar Bhavan, Opp. Versova Police Station, Versova, Mumbai, Maharashtra 400061"},
+                {lat: 19.1201, lng: 72.8658, title: "Pawprints Animal Hospital", Address:"1, Gaurav Apartments, Near Mogra Lane, Andheri East, Mumbai, Maharashtra 400069"},
+                {lat: 19.1260, lng: 72.9354, title: "Hiranandani Veterinary Clinic", Address:"Shop No. 6, Raghuleela Mall, Hiranandani Gardens, Powai, Mumbai, Maharashtra 400076"},
+                {lat: 19.2184, lng: 72.9788, title: "Cuddles Pet Clinic", Address:"10, Prabhat Niwas, Opp. TMC Office, Thane West, Mumbai, Maharashtra 400601"},
+                {lat: 19.0726, lng: 72.8318, title: "Dr. Meher’s Animal Clinic", Address:"1st Floor, K. S. Bhavan, Near Mogra Lane, Santacruz West, Mumbai, Maharashtra 400054"},
+                {lat: 19.0704, lng: 72.8328, title: "Dr. Shah's Veterinary Clinic", Address:"3, Aditi Apartments, Opp. Shivaji Park, Khar West, Mumbai, Maharashtra 400052"},
+                // Add more locations here
+            ];
+
+            // Loop through the locations array and create a marker for each
+            locations.forEach(function(location) {
+                var marker = new google.maps.Marker({
+                    position: {lat: location.lat, lng: location.lng},
+                    map: map,
+                    title: location.title
+                });
+
+                // Create the content for the InfoWindow
+                var infowindowContent = `
+                    <div>
+                        <strong>${location.title}</strong><br>
+                        ${location.Address}
+                    </div>
+                `;
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: infowindowContent
+                });
+
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap"></script>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>

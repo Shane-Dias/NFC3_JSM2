@@ -45,23 +45,21 @@ class oanimals(db.Model):
         self.size = size
         self.desc = desc
 
-class cats(db.Model):
+class Cat(db.Model):
     __bind_key__ = "db3"
-    sno = db.Column(db.Integer, primary_key=True)
-    date_created = db.Column(db.DateTime, default=datetime.now)
-    name = db.Column(db.String(80), nullable=False)
-    breed = db.Column(db.String(80), nullable=False)
-    sex = db.Column(db.String(80), nullable=False)
-    age = db.Column(db.Integer,nullable=False)
-    size = db.Column(db.String(80), nullable=False)
-    desc = db.Column(db.String(200), nullable=False)
-    def __init__(self, name, breed, sex,age,size,desc):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    age = db.Column(db.Integer, nullable=False)
+    breed = db.Column(db.String(100), nullable=False)
+    description = db.Column(db.Text, nullable=False)
+    image_filename = db.Column(db.String(255))  # Store the filename of the uploaded image
+
+    def __init__(self, name, age, breed, description, image_filename=None):
         self.name = name
-        self.breed = breed
-        self.sex = sex
         self.age = age
-        self.size = size
-        self.desc = desc
+        self.breed = breed
+        self.description = description
+        self.image_filename = image_filename
 
 class sea_Creatures(db.Model):
     __bind_key__ = "db4"
@@ -81,23 +79,21 @@ class sea_Creatures(db.Model):
         self.size = size
         self.desc = desc
 
-class dogs(db.Model):
+class Dog(db.Model):
     __bind_key__ = "db5"
-    sno = db.Column(db.Integer, primary_key=True)
-    date_created = db.Column(db.DateTime, default=datetime.now)
-    name = db.Column(db.String(80), nullable=False)
-    breed = db.Column(db.String(80), nullable=False)
-    sex = db.Column(db.String(80), nullable=False)
-    age = db.Column(db.Integer,nullable=False)
-    size = db.Column(db.String(80), nullable=False)
-    desc = db.Column(db.String(200), nullable=False)
-    def __init__(self, name, breed, sex,age,size,desc):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    age = db.Column(db.Integer, nullable=False)
+    breed = db.Column(db.String(100), nullable=False)
+    description = db.Column(db.Text, nullable=False)
+    image_filename = db.Column(db.String(255))  # Store the filename of the uploaded image
+
+    def __init__(self, name, age, breed, description, image_filename=None):
         self.name = name
-        self.breed = breed
-        self.sex = sex
         self.age = age
-        self.size = size
-        self.desc = desc
+        self.breed = breed
+        self.description = description
+        self.image_filename = image_filename
 
 class history(db.Model):
     __bind_key__ = "db6"
@@ -160,7 +156,26 @@ def sign_up():
 def adoptpet():
     return render_template('dog.html')
 
+@app.route('/dog/<int:dog_id>')
+def dog_details(dog_id):
+    dog = Dog.query.get_or_404(dog_id)
+    return render_template('dog_details.html', dog=dog)
 
+@app.route('/cat/<int:cat_id>')
+def cat_details(cat_id):
+    cat = Cat.query.get_or_404(cat_id)
+    return render_template('cat_details.html', cat=cat)
+
+@app.route('/thank_you')
+def thank_you():
+    return render_template('thank_you.html')
+
+@app.route('/adopt/<int:animal_id>', methods=['POST'])
+def adopt_animal():
+    # Add your adoption logic here
+    # For example, you might want to mark the animal as adopted or add an entry in a history table
+    # This is a placeholder implementation
+    return redirect('/thank_you')
 
 @app.route('/shelterInformation')
 def shelterinfo():
