@@ -1,6 +1,7 @@
 from flask import Flask, render_template,request, session,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from werkzeug.security import check_password_hash
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///default.db'
 app.config["SQLALCHEMY_BINDS"] = {
@@ -141,16 +142,14 @@ def login():
         email = request.form['email']
         password = request.form['password']
 
-        user = Users.query.filter_by(email = email).first()
+        # Fetch the user by email
+        user = Users.query.filter_by(email=email).first()
 
-        if user and user.check_password(password):
-            session['email'] = user.email
-            session['password'] = user.password
-            return redirect('/index')
+        if user and check_password_hash(user.password, password):
+            return redirect('/')
         else:
-            return render_template('/log-reg.html',error='Invalid User')
+            return render_template('log-reg.html', error='Invalid email or password')
 
-    return render_template("log-reg.html")
 
 @app.route('/login',methods=['GET','POST'])
 def check():
