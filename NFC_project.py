@@ -160,6 +160,8 @@ def sign_up():
 def adoptpet():
     return render_template('dog.html')
 
+
+
 @app.route('/shelterInformation')
 def shelterinfo():
     return render_template('shelter.html')
