@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --wwwpetfindercom-arial-narrow-12: Arial;
+
+  /* font sizes */
+  --wwwpetfindercom-arial-narrow-12-size: 0.75rem;
+  --wwwpetfindercom-arial-narrow-14-upper-size: 0.875rem;
+  --wwwpetfindercom-arial-narrow-13-size: 0.813rem;
+  --wwwpetfindercom-arial-narrow-16-size: 1rem;
+  --wwwpetfindercom-arial-bold-1641-size: 1.025rem;
+  --wwwpetfindercom-arial-bold-4184-size: 2.613rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-chocolate-100: #f27629;
+  --color-lightgray: #d2d1d3;
+  --color-dimgray: #4d4751;
+
+  /* Gaps */
+  --gap-xl: 1.25rem;
+  --gap-5xs: 0.5rem;
+  --gap-0: 0rem;
+  --gap-3xl: 1.375rem;
+  --gap-base-2: 0.95rem;
+
+  /* Paddings */
+  --padding-5xl: 1.5rem;
+  --padding-31xl: 3.125rem;
+  --padding-6xl: 1.562rem;
+  --padding-xl: 1.25rem;
+  --padding-7xl: 1.625rem;
+  --padding-9xl: 1.75rem;
+  --padding-3xl: 1.375rem;
+  --padding-smi: 0.812rem;
+  --padding-2xl: 1.312rem;
+  --padding-2xs: 0.687rem;
+  --padding-mini: 0.937rem;
+  --padding-12xs-8: 0.05rem;
+  --padding-29xl: 3rem;
+  --padding-base-8: 0.987rem;
+  --padding-base-2: 1.012rem;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-8xs: 5px;
+}
