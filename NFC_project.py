@@ -167,6 +167,9 @@ def check():
 def adoptpet():
     return render_template('dog.html')
 
+@app.route('/shelterInformation')
+def shelterinfo():
+    return render_template('shelter.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

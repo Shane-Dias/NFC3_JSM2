@@ -157,17 +157,18 @@
                   class="item-link-browse-shelters"
                   id="itemLinkBrowseShelters"
                 >
-                  <img
-                    class="svg-icon3"
-                    loading="lazy"
-                    alt=""
-                    src="{{ url_for('static', filename='public/svg-6.svg') }}"
-                  />
+                  <a href="/shelterInformation">
+                    <img
+                      class="svg-icon3"
+                      loading="lazy"
+                      alt=""
+                      src="{{ url_for('static', filename='public/svg-6.svg') }}"
+                  /></a>
 
                   <div class="container12">
                     <a
                       class="shelters-rescues"
-                      href="https://www.petfinder.com/animal-shelters-and-rescues/search"
+                      href="/shelterInformation"
                       target="_blank"
                       >Shelters & Rescues</a
                     >
@@ -967,9 +968,7 @@
       );
       if (itemLinkBrowseShelters) {
         itemLinkBrowseShelters.addEventListener("click", function () {
-          window.open(
-            "https://www.petfinder.com/animal-shelters-and-rescues/search"
-          );
+          window.open("/shelterInformation");
         });
       }
 
