@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cat.name }}</title>
+</head>
+<body>
+    <h1>{{ cat.name }}</h1>
+    <p><strong>Age:</strong> {{ cat.age }}</p>
+    <p><strong>Breed:</strong> {{ cat.breed }}</p>
+    <p><strong>Description:</strong> {{ cat.description }}</p>
+    {% if cat.image_url %}
+    <img src="{{ cat.image_url }}" alt="{{ cat.name }}" style="max-width: 400px;">
+    {% endif %}
+    <a href="/cats">Back to list</a>
+</body>
+</html>
