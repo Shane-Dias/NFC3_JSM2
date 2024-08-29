@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Cats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <h1>All Cats</h1>
-    <ul>
+    <div class="animal-container">
         {% for cat in cats %}
-        <li>
-            <a href="/cat/{{ cat.id }}">{{ cat.name }}</a> - {{ cat.breed }}
-        </li>
+        <div class="animal-item">
+            <img src="{{ url_for('static', filename='uploads/' ~ cat.image_filename) }}" alt="{{ cat.name }}" class="animal-image">
+            <h2>{{ cat.name }}</h2>
+            <p>{{ cat.breed }}</p>
+            <a href="/cat/{{ cat.id }}">View Details</a>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
     <a href="/add_cat">Add a new cat</a>
 </body>
 </html>

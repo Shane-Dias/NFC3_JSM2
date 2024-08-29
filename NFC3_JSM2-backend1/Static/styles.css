@@ -1,9 +1,148 @@
 /* styles.css */
+/* General Body Styles */
+/* General Body Styles */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
     color: #333;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #007bff; /* Blue color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Container for Animal Items */
+.animal-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align items horizontally */
+    gap: 20px; /* Space between items */
+    padding: 0 20px; /* Padding around container */
+}
+
+/* Styles for Each Animal Item */
+.animal-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px; /* Width of each item */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Animal Images */
+.animal-image {
+    width: 100%; /* Make image width 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    object-fit: cover; /* Ensure the image covers the container */
+    max-height: 200px; /* Restrict maximum height */
+}
+
+/* Link Styling */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Link to Add a New Animal */
+a[href="/add_cat"],
+a[href="/add_dog"] {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a[href="/add_cat"]:hover,
+a[href="/add_dog"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #007bff; /* Blue color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Container for Dog Items */
+.dog-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align items horizontally */
+    gap: 20px; /* Space between items */
+    padding: 0 20px; /* Padding around container */
+}
+
+/* Styles for Each Dog Item */
+.dog-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px; /* Width of each item */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Dog Images */
+.dog-image {
+    width: 100%; /* Make image width 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    object-fit: cover; /* Ensure the image covers the container */
+    max-height: 200px; /* Restrict maximum height */
+}
+
+/* Link Styling */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Link to Add a New Dog */
+a[href="/add_dog"] {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a[href="/add_dog"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 header {
@@ -133,6 +272,66 @@ footer {
     color: #fff;
     font-size: 16px;
 }
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #333; /* Blue color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Center align the list */
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Link to Add a New Dog */
+a[href="/add_dog"] {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a[href="/add_dog"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
