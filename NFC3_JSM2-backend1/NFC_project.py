@@ -50,7 +50,7 @@ class Cat(db.Model):
         self.image_filename = image_filename
 
 class Dog(db.Model):
-    __bind_key__ = "db3"
+    __bind_key__ = "db5"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     age = db.Column(db.Integer, nullable=False)
@@ -100,6 +100,10 @@ def add_cat():
         db.session.add(new_cat)
         db.session.commit()
         return redirect('/cats')
+    
+    # Return the form for adding a cat if the request method is GET
+    return render_template('add_cat.html')
+
 
 @app.route('/cats')
 def list_cats():
@@ -110,6 +114,13 @@ def list_cats():
 def cat_details(cat_id):
     cat = Cat.query.get_or_404(cat_id)
     return render_template('cat_details.html', cat=cat)
+
+@app.route('/delete_cat/<int:cat_id>', methods=['POST'])
+def delete_cat(cat_id):
+    cat = Cat.query.get_or_404(cat_id)
+    db.session.delete(cat)
+    db.session.commit()
+    return redirect('/cats')
 
 @app.route('/add_dog', methods=['GET', 'POST'])
 def add_dog():
@@ -144,6 +155,13 @@ def dog_details(dog_id):
     dog = Dog.query.get_or_404(dog_id)
     return render_template('dog_details.html', dog=dog)
 
+@app.route('/delete_dog/<int:dog_id>', methods=['POST'])
+def delete_dog(dog_id):
+    dog = Dog.query.get_or_404(dog_id)
+    db.session.delete(dog)
+    db.session.commit()
+    return redirect('/dogs')
+
 @app.route('/')
 def hello_world():
      # Return the template
@@ -167,6 +185,7 @@ def login():
     return render_template("log-reg.html")
 
 
+@app.route('/sign_up',methods=['GET','POST'])
 def sign_up():
     if request.method == 'POST':
         name = request.form['name']
@@ -179,6 +198,17 @@ def sign_up():
         return redirect('/log-reg.html')
     
     return render_template("sign up")
+
+@app.route('/thank_you')
+def thank_you():
+    return render_template('thank_you.html')
+
+@app.route('/adopt/<int:animal_id>', methods=['POST'])
+def adopt_animal(animal_id):
+    # Add your adoption logic here
+    # For example, you might want to mark the animal as adopted or add an entry in a history table
+    # This is a placeholder implementation
+    return redirect('/thank_you')
 
 @app.route('/adoptpet')
 def adoptpet():

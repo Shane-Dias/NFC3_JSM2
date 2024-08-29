@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
   </head>
-  <link
-    rel="stylesheet"
-    href="{{ url_for('static', filename='log-reg.css') }}"
-  />
+  <link rel="stylesheet" href="log-reg.css">
   <body>
     <div class="wrapper">
       <span class="icon-close">
@@ -16,7 +13,7 @@
       </span>
       <div class="form-box login">
         <h2>Login</h2>
-        <form action="/login" method="POST">
+        <form action="#" method="post">
           <div class="inputbox">
             <span class="icon">
               <ion-icon name="mail-sharp"></ion-icon>
@@ -47,7 +44,7 @@
       </div>
       <div class="form-box register">
         <h2>Register</h2>
-        <form action="/sign_up" method="POST">
+        <form action="#" method="post">
           <div class="inputbox">
             <span class="icon"> <ion-icon name="person"></ion-icon> </span>
             <input type="text" name="username" id="username" required />
@@ -76,13 +73,13 @@
           <button type="submit" class="btn">Register</button>
           <div class="login-reg">
             <p>
-              Already have an account?<a href="/register" class="LoginLink">Login</a>
+              Already have an account?<a href="#" class="LoginLink">Login</a>
             </p>
           </div>
         </form>
       </div>
     </div>
-    <script src="{{url_for('static',filename='log-reg.js')}}"></script>
+    <script src="log-reg.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
