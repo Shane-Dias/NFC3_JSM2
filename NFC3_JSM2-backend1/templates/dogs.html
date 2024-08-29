@@ -8,13 +8,16 @@
 </head>
 <body>
     <h1>All Dogs</h1>
-    <div class="dog-container">
+    <div class="animal-container">
         {% for dog in dogs %}
-        <div class="dog-item">
-            <img src="{{ url_for('static', filename='uploads/' ~ dog.image_filename) }}" alt="{{ dog.name }}" class="dog-image">
+        <div class="animal-item">
+            <img src="{{ url_for('static', filename='uploads/' ~ dog.image_filename) }}" alt="{{ dog.name }}" class="animal-image">
             <h2>{{ dog.name }}</h2>
             <p>{{ dog.breed }}</p>
             <a href="/dog/{{ dog.id }}">View Details</a>
+            <form action="/delete_dog/{{ dog.id }}" method="POST" style="display: inline;">
+                <button type="submit" class="delete-button">Delete</button>
+            </form>
         </div>
         {% endfor %}
     </div>

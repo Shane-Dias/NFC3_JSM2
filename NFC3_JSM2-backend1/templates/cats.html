@@ -15,6 +15,9 @@
             <h2>{{ cat.name }}</h2>
             <p>{{ cat.breed }}</p>
             <a href="/cat/{{ cat.id }}">View Details</a>
+            <form action="/delete_cat/{{ cat.id }}" method="POST" style="display: inline;">
+                <button type="submit" class="delete-button">Delete</button>
+            </form>
         </div>
         {% endfor %}
     </div>
