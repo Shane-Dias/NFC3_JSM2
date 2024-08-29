@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request, session,redirect
+from flask import Flask, render_template,request, url_for,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from werkzeug.security import check_password_hash
@@ -121,21 +121,10 @@ with app.app_context():
     db.create_all()
 
 @app.route('/')
-def hello_world():
+def home():
     return render_template("index.html")
 
-def sign_up():
-    if request.method == 'POST':
-        username = request.form['username']
-        email = request.form['email']
-        password = request.form['password']
 
-        new_user = Users(username=username,email=email, password=password)
-        db.session.add(new_user)
-        db.session.commit()
-        return redirect('/log-reg.html')
-    
-    return render_template("sign up")
 
 def login():
     if request.method == 'POST':
@@ -152,12 +141,16 @@ def login():
 
 
 @app.route('/login',methods=['GET','POST'])
-def check():
-    data = request.form.get('username')
-    if data==None:
-        login()
-    else:
-        sign_up()
+def sign_up():
+    if request.method == 'POST':
+        username = request.form['username']
+        email = request.form['email']
+        password = request.form['password']
+
+        new_user = Users(username=username,email=email, password=password)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect(url_for('home'))
     return render_template("log-reg.html")
 
 
