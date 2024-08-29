@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Dog Details</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="book-cover">
+                {% if dog.image_filename %}
+                    <img src="{{ url_for('static', filename='uploads/' ~ dog.image_filename) }}" alt="Dog Image">
+                {% endif %}
+            </div>
+            <div class="book-details">
+                <h2>{{ dog.name }}</h2>
+                <p>Age: {{ dog.age }}</p>
+                <p>Breed: {{ dog.breed }}</p>
+                <p>Description: {{ dog.description }}</p>
+                <!-- Adopt Me Button -->
+                <form action="/adopt/{{ dog.id }}" method="POST" style="display:inline;">
+                    <button type="submit" class="adopt-button">
+                        <span class="heart-icon">&#10084;</span> Adopt Me!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+</body>
+</html>
