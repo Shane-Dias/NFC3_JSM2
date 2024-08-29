@@ -153,8 +153,12 @@ def sign_up():
 
 
 @app.route('/adoptpet/Dogs')
-def adoptpet():
+def adoptdogs():
     return render_template('dog.html')
+
+@app.route('/adoptpet/Cats')
+def adoptcats():
+    return render_template('cat.html')
 
 @app.route('/dog/<int:dog_id>')
 def dog_details(dog_id):
