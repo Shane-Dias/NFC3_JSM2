@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Cats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>All Cats</h1>
+    <div class="animal-container">
+        {% for cat in cats %}
+        <div class="animal-item">
+            <img src="{{ url_for('static', filename='uploads/' ~ cat.image_filename) }}" alt="{{ cat.name }}" class="animal-image">
+            <h2>{{ cat.name }}</h2>
+            <p>{{ cat.breed }}</p>
+            <a href="/cat/{{ cat.id }}">View Details</a>
+            <form action="/delete_cat/{{ cat.id }}" method="POST" style="display: inline;">
+                <button type="submit" class="delete-button">Delete</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="/add_cat">Add a new cat</a>
+</body>
+</html>
