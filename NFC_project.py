@@ -1,7 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request, session,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///default.db'
 app.config["SQLALCHEMY_BINDS"] = {
@@ -122,21 +121,48 @@ with app.app_context():
 
 @app.route('/')
 def hello_world():
+     # Return the template
     return render_template("index.html")
 
-@app.route('/login')
+@app.route('/login',methods=['GET','POST'])
 def login():
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+
+        user = Users.query.filter_by(email = email).first()
+
+        if user and user.check_password(password):
+            session['email'] = user.email
+            session['password'] = user.password
+            return redirect('/index')
+        else:
+            return render_template('/log-reg.html',error='Invalid User')
+
     return render_template("log-reg.html")
 
 
-@app.route('/sign_up')
+@app.route('/sign_up',methods=['GET','POST'])
 def sign_up():
-    return "sign up"
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+
+        new_user = Users(email=email, password=password)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect('/log-reg.html')
+    
+    return render_template("sign up")
+
 
 
 @app.route('/adoptpet')
 def adoptpet():
-    return "adopt pet"
+    if session['email']:
+        return render_template("adopt pet")
+    
+    return redirect('/log-reg.html')
 
 
 if __name__ == "__main__":
