@@ -163,12 +163,9 @@ def check():
 
 
 
-@app.route('/adoptpet')
+@app.route('/adoptpet/Dogs')
 def adoptpet():
-    if session['email']:
-        return render_template("adopt pet")
-    
-    return redirect('/log-reg.html')
+    return render_template('dog.html')
 
 
 if __name__ == "__main__":

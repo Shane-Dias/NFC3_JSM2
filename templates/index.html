@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Audiowide:wght@400&display=swap"
+    />
   </head>
   <body>
     <div class="container">
@@ -31,32 +35,26 @@
         <header class="header">
           <div class="link-skip-to-content" id="linkSkipToContent"></div>
           <div class="background">
-            <h4
+            <h2
               style="
-                color: blue;
+                color: black;
+                font-size: 2rem;
                 font-size: 34px;
-                font-family: 'Playfair Display', serif;
-                color: #333;
-                text-align: center;
-                text-transform: capitalize;
-                letter-spacing: 2px;
-                padding: 20px;
-                margin: 50px 0;
-                border-bottom: 2px solid #333;
-                display: inline-block;
+                font-family: 'Audiowide';
               "
             >
-              Purrfect Match:
-            </h4>
+              Purrfect Match
+            </h2>
             <p
               style="
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
                   sans-serif;
                 font-size: 2rem;
                 font-weight: 500;
+                margin-left: 20px;
               "
             >
-              Bringing Joy to Every Home One Pet at a Time
+              Bringing Joy to Every Home, One Pet at a Time
             </p>
             <div class="container1">
               <div class="container3">
@@ -81,7 +79,7 @@
               </div>
               <div class="item1">
                 <div class="link2">
-                  <a class="adopt-or-get" href="#" target="_blank"
+                  <a class="adopt-or-get" href="/adoptpet/Dogs" target="_blank"
                     >Dogs & Puppies</a
                   >
                 </div>
@@ -119,12 +117,13 @@
             <div class="group">
               <div class="list">
                 <div class="item-button">
-                  <img
-                    class="svg-icon3"
-                    loading="lazy"
-                    alt=""
-                    src="{{ url_for('static', filename='public/svg-3.svg') }}"
-                  />
+                  <a href="/adoptpet/Dogs">
+                    <img
+                      class="svg-icon3"
+                      loading="lazy"
+                      alt=""
+                      src="{{ url_for('static', filename='public/svg-3.svg') }}"
+                  /></a>
 
                   <div class="container9">
                     <div class="dogs">Dogs</div>
