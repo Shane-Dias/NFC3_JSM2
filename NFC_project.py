@@ -123,7 +123,19 @@ with app.app_context():
 def hello_world():
     return render_template("index.html")
 
-@app.route('/login',methods=['GET','POST'])
+def sign_up():
+    if request.method == 'POST':
+        username = request.form['username']
+        email = request.form['email']
+        password = request.form['password']
+
+        new_user = Users(username=username,email=email, password=password)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect('/log-reg.html')
+    
+    return render_template("sign up")
+
 def login():
     if request.method == 'POST':
         email = request.form['email']
@@ -139,18 +151,16 @@ def login():
             return render_template('/log-reg.html',error='Invalid User')
 
     return render_template("log-reg.html")
-def sign_up():
-    if request.method == 'POST':
-        username = request.form['username']
-        email = request.form['email']
-        password = request.form['password']
 
-        new_user = Users(username=username,email=email, password=password)
-        db.session.add(new_user)
-        db.session.commit()
-        return redirect('/log-reg.html')
-    
-    return render_template("sign up")
+@app.route('/login',methods=['GET','POST'])
+def check():
+    data = request.form.get('username')
+    if data==None:
+        login()
+    else:
+        sign_up()
+    return render_template("log-reg.html")
+
 
 
 
