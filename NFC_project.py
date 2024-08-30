@@ -15,6 +15,7 @@ app.config["SQLALCHEMY_BINDS"] = {
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
+
 class Users(db.Model):
     __bind_key__ = "db1"
     sno = db.Column(db.Integer, primary_key=True)
@@ -27,23 +28,6 @@ class Users(db.Model):
         self.username = username
         self.password = password
         self.email = email
-
-class oanimals(db.Model):
-    __bind_key__ = "db2"
-    sno = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(80), nullable=False)
-    breed = db.Column(db.String(80), nullable=False)
-    sex = db.Column(db.String(80), nullable=False)
-    age = db.Column(db.Integer,nullable=False)
-    size = db.Column(db.String(80), nullable=False)
-    desc = db.Column(db.String(200), nullable=False)
-    def __init__(self, name, breed, sex,age,size,desc):
-        self.name = name
-        self.breed = breed
-        self.sex = sex
-        self.age = age
-        self.size = size
-        self.desc = desc
 
 class Cat(db.Model):
     __bind_key__ = "db3"
@@ -61,24 +45,6 @@ class Cat(db.Model):
         self.description = description
         self.image_filename = image_filename
 
-class sea_Creatures(db.Model):
-    __bind_key__ = "db4"
-    sno = db.Column(db.Integer, primary_key=True)
-    date_created = db.Column(db.DateTime, default=datetime.now)
-    name = db.Column(db.String(80), nullable=False)
-    breed = db.Column(db.String(80), nullable=False)
-    sex = db.Column(db.String(80), nullable=False)
-    age = db.Column(db.Integer,nullable=False)
-    size = db.Column(db.String(80), nullable=False)
-    desc = db.Column(db.String(200), nullable=False)
-    def __init__(self, name, breed, sex,age,size,desc):
-        self.name = name
-        self.breed = breed
-        self.sex = sex
-        self.age = age
-        self.size = size
-        self.desc = desc
-
 class Dog(db.Model):
     __bind_key__ = "db5"
     id = db.Column(db.Integer, primary_key=True)
@@ -95,23 +61,7 @@ class Dog(db.Model):
         self.description = description
         self.image_filename = image_filename
 
-class history(db.Model):
-    __bind_key__ = "db6"
-    sno = db.Column(db.Integer, primary_key=True)
-    date_created = db.Column(db.DateTime, default=datetime.now)
-    name = db.Column(db.String(80), nullable=False)
-    breed = db.Column(db.String(80), nullable=False)
-    sex = db.Column(db.String(80), nullable=False)
-    age = db.Column(db.Integer,nullable=False)
-    size = db.Column(db.String(80), nullable=False)
-    desc = db.Column(db.String(200), nullable=False)
-    def __init__(self, name, breed, sex,age,size,desc):
-        self.name = name
-        self.breed = breed
-        self.sex = sex
-        self.age = age
-        self.size = size
-        self.desc = desc
+
 
 with app.app_context():
     db.create_all()
@@ -149,8 +99,13 @@ def sign_up():
         return redirect(url_for('home'))
     return render_template("log-reg.html")
 
+@app.route('/map')
+def map():
+    return render_template('map.html')
 
-
+@app.route('/PetSitter')
+def petsitter():
+    return render_template("petsitter.html")
 
 @app.route('/adoptpet/Dogs')
 def adoptdogs():
