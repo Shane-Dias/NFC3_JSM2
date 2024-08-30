@@ -628,17 +628,17 @@
 }
 .header-parent,
 .horizontalborder {
-  background: url("./public/container@2x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
 .horizontalborder {
+  background: url("./public/container@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
   margin-left: -15.844rem;
   width: 120rem;
   height: 31.625rem;
