@@ -216,20 +216,6 @@
                               Sylvie Aussie or Mi
                             </h3>
                           </div>
-                          <div class="animal-container">
-                            {% for dog in dogs %}
-                            <div class="animal-item">
-                                <img src="{{ url_for('static', filename='uploads/' ~ dog.image_filename) }}" alt="{{ dog.name }}" class="animal-image">
-                                <h2>{{ dog.name }}</h2>
-                                <p>{{ dog.breed }}</p>
-                                <a href="/dog/{{ dog.id }}">View Details</a>
-                                <form action="/delete_dog/{{ dog.id }}" method="POST" style="display: inline;">
-                                    <button type="submit" class="delete-button">Delete</button>
-                                </form>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <a href="/add_dog">Add a new dog</a>
                           <div class="dale-card">
                             <div class="dina-card">
                               <div class="item-adult">Adult </div>
@@ -1391,6 +1377,20 @@
                         </div>
                       </div>
                     </div>
+                    <div class="animal-container">
+                      {% for dog in dogs %}
+                      <div class="animal-item">
+                          <img src="{{ url_for('static', filename='uploads/' ~ dog.image_filename) }}" alt="{{ dog.name }}" class="animal-image">
+                          <h2>{{ dog.name }}</h2>
+                          <p>{{ dog.breed }}</p>
+                          <a href="/dog/{{ dog.id }}">View Details</a>
+                          <form action="/delete_dog/{{ dog.id }}" method="POST" style="display: inline;">
+                              <button type="submit" class="delete-button">Delete</button>
+                          </form>
+                      </div>
+                      {% endfor %}
+                  </div>
+                  <a href="/add_dog">Add a new dog</a>
                   </div>
                 </div>
               </div>

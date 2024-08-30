@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='catglobal.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='catindex.css')}}"
+    />
+    <!-- <link rel="stylesheet" href="../Static/catindex.css">
+    <link rel="stylesheet" href="../Static/catglobal.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Audiowide:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="root">
+      <div class="pfdc-header-parent">
+        <header class="pfdc-header">
+          <div class="header">
+            <div class="container">
+              <div class="margin">
+                <div class="container1">
+                  <div class="verticalborder">
+                    <div class="link" id="linkContainer">
+                      <img
+                        class="img-icon"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for('static',filename='public4/img.svg')}}"
+                      />
+                    </div>
+                  </div>
+                  <div class="container2">
+                    <div class="container3">
+                      <div class="container4">
+                        <div class="button-dialog">
+                          <div class="container5">
+                            <img
+                              class="svg-icon"
+                              alt=""
+                              src="{{url_for('static',filename='public4/svg.svg')}}"
+                            />
+
+                            <div class="margin1">
+                              <a class="sign-in">Sign In</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="backgroundshadow-parent">
+          <div class="backgroundshadow">
+            <div class="container6">
+              <div class="container7">
+                <div class="container8">
+                  <div class="pfdc-animal-type-select">
+                    <div class="container9">
+                      <div class="pf-focus-manager-button-menu">
+                        <div class="k-dogs">2.0K Dogs</div>
+                        <img
+                          class="img-icon1"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/img-1.svg')}}"
+                        />
+                        <img
+                          class="image-icon"
+                          alt=""
+                          src="{{url_for('static',filename='public4/image.svg')}}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pfdc-element">
+                    <div class="pfdc-generic-select">
+                      <div class="button-menu-select-distance">
+                        <div class="container10">
+                          <div class="container11">
+                            <a class="miles">100 miles</a>
+                          </div>
+                        </div>
+                      </div>
+                      <img
+                        class="image-icon1"
+                        alt=""
+                        src="{{url_for('static',filename='public4/image-1.svg')}}"
+                      />
+                    </div>
+                  </div>
+                  <div class="pfdc-suggester">
+                    <div class="pfdc-element1">
+                      <div class="button-search-locations-by-e">
+                        <a class="near-california">near California</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container12">
+                  <div class="container13">
+                    <div class="container4">
+                      <div class="button">
+                        <a class="save-search">Save Search</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="results-container-wrapper">
+            <div class="results-container">
+              <div class="results-title-container">
+                <h1 class="cats">CATS</h1>
+              </div>
+              <div class="pet-card-grid">
+                <div class="filters">
+                  <div class="pfdc-animal-search-filters-l">
+                    <div class="item">
+                      <div class="container15">
+                        <div class="breed">Breed</div>
+                      </div>
+                      <div class="pfdc-breed-autosuggest">
+                        <div class="button-menu-search-by-breed">
+                          <div class="container16">
+                            <div class="any">Any</div>
+                          </div>
+                        </div>
+                        <img
+                          class="image-icon2"
+                          alt=""
+                          src="{{url_for('static',filename='public4/image-2@2x.png')}}"
+                        />
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="container15">
+                        <div class="age">Age</div>
+                      </div>
+                      <div class="pfdc-breed-autosuggest">
+                        <div class="button-menu-select-age-any">
+                          <div class="container18">
+                            <div class="container19">
+                              <div class="any1">Any</div>
+                            </div>
+                          </div>
+                        </div>
+                        <img
+                          class="image-icon2"
+                          alt=""
+                          src="{{url_for('static',filename='public4/image-2@2x.png')}}"
+                        />
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="container15">
+                        <div class="size">Size</div>
+                      </div>
+                      <div class="pfdc-breed-autosuggest">
+                        <div class="button-menu-select-age-any">
+                          <div class="container18">
+                            <div class="container19">
+                              <div class="any1">Any</div>
+                            </div>
+                          </div>
+                        </div>
+                        <img
+                          class="image-icon2"
+                          alt=""
+                          src="{{url_for('static',filename='public4/image-2@2x.png')}}"
+                        />
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="container15">
+                        <div class="gender">Gender</div>
+                      </div>
+                      <div class="pfdc-breed-autosuggest">
+                        <div class="button-menu-select-age-any">
+                          <div class="container18">
+                            <div class="container19">
+                              <div class="any1">Any</div>
+                            </div>
+                          </div>
+                        </div>
+                        <img
+                          class="image-icon2"
+                          alt=""
+                          src="{{url_for('static',filename='public4/image-5@2x.png')}}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pet-card-row">
+                  <div class="pfdc-pet-card-wrapper">
+                    <div class="pfdc-pet-card">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkPJMotherCatOak"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="container26">
+                            <h3 class="pj-mother-cat">PJ Mother Cat --- </h3>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item4">
+                            <div class="miles-away">7 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pet-card-row-second">
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkAustinAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-1.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="pet-card-name-container-third">
+                            <div class="container27">
+                              <h3 class="austin">Austin</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info-third">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkAspenAdoptableCatK"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-2.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="domestic-name-container">
+                            <div class="container27">
+                              <h3 class="austin">Aspen</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info-third">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="female-cards">
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkParisAdoptableCatK"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-3.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="female-names">
+                            <div class="container29">
+                              <h3 class="austin">Paris</h3>
+                            </div>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkLillyAdoptableCatA"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-4.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="female-names">
+                            <div class="container30">
+                              <h3 class="lilly">Lilly</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkVenusAdoptableCatA"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-5.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="pet-card-name-container-third">
+                            <div class="container27">
+                              <h3 class="austin">Venus</h3>
+                            </div>
+                          </div>
+                          <div class="mixed-traits-container">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="mixed-icon-container">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-tuxedo">Tuxedo Mix</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">26 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkSmokeyAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-6.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="siamese-name-container">
+                            <div class="container27">
+                              <h3 class="austin">Smokey</h3>
+                            </div>
+                          </div>
+                          <div class="siamese-traits-container">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-russian">
+                                Russian Blue
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkLouiseAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-7.svg')}}"
+                        />
+
+                        <div class="background14">
+                          <div class="names">
+                            <div class="container27">
+                              <h3 class="austin">Louise</h3>
+                            </div>
+                          </div>
+                          <div class="traits">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="mixed-icon-container">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-tabby">Tabby</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pet-card-row1">
+                  <div class="pfdc-pet-card-container">
+                    <div class="pfdc-pet-card">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkStripesOakhurst"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-8.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container34">
+                            <h3 class="pj-mother-cat">Stripes -- Oakhurs</h3>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-young">Young</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item4">
+                            <div class="miles-away">7 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pfdc-pet-card-parent">
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkBostonAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-9.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container-wrapper">
+                            <div class="container27">
+                              <h3 class="austin">Boston</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info-third">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkEmaAdoptableCatAdu"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-10.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="female-names">
+                            <div class="container36">
+                              <h3 class="austin">Ema</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="female-cards">
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkLeviAdoptableCatAd"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-11.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="female-names">
+                            <div class="container30">
+                              <h3 class="levi">Levi</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkTessaAdoptableCatA"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-12.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="frame-div">
+                            <div class="container27">
+                              <h3 class="austin">Tessa</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkBizkitAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-13.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="container-wrapper1">
+                            <div class="container27">
+                              <h3 class="austin">Bizkit</h3>
+                            </div>
+                          </div>
+                          <div class="background-inner2">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-bombay">Bombay</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkCookieAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-14.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container-wrapper">
+                            <div class="container27">
+                              <h3 class="austin">Cookie</h3>
+                            </div>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-siamese">
+                              Siamese & Ragdol
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkThelmaAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-15.svg')}}"
+                        />
+
+                        <div class="background14">
+                          <div class="container-wrapper3">
+                            <div class="container30">
+                              <h3 class="thelma">Thelma</h3>
+                            </div>
+                          </div>
+                          <div class="traits">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="mixed-icon-container">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-tabby">Tabby</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pet-card-row2">
+                  <div class="pfdc-pet-card-wrapper">
+                    <div class="pfdc-pet-card">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkSamMaleKittenOak"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-16.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container42">
+                            <h3 class="pj-mother-cat">Sam Male Kitten --</h3>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item4">
+                            <div class="miles-away">7 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pfdc-pet-card-parent1">
+                    <div class="pfdc-pet-card17">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkSavannahAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-17.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container-wrapper4">
+                            <div class="container27">
+                              <h3 class="austin">Savannah</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info-third">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card17">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkPhoenixAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-18.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="siamese-name-container">
+                            <div class="container27">
+                              <h3 class="austin">Phoenix</h3>
+                            </div>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pfdc-pet-card-parent2">
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkSydneyAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-19.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container-wrapper6">
+                            <div class="container30">
+                              <h3 class="thelma">Sydney</h3>
+                            </div>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkSophieAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-20.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="container-wrapper">
+                            <div class="container27">
+                              <h3 class="austin">Sophie</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkMatildaAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-21.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="container-wrapper8">
+                            <div class="container30">
+                              <h3 class="matilda">Matilda</h3>
+                            </div>
+                          </div>
+                          <div class="background-inner5">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-calico">Calico</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkSnowflakeAdoptableCa"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-22.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container-wrapper9">
+                            <div class="container27">
+                              <h3 class="austin">Snowflake</h3>
+                            </div>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-siamese">
+                              Siamese & Ragdol
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkJalapeoAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-23.svg')}}"
+                        />
+
+                        <div class="background14">
+                          <div class="container-wrapper10">
+                            <div class="container27">
+                              <h3 class="austin">Jalapeño</h3>
+                            </div>
+                          </div>
+                          <div class="traits">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="mixed-icon-container">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-tabby">Tabby</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pet-card-row3">
+                  <div class="pfdc-pet-card1">
+                    <div
+                      class="link-pj-mother-cat-oak"
+                      id="linkAutumnAdoptableCat"
+                    >
+                      <img
+                        class="pfdc-lazy-load-icon"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for('static',filename='public4/pfdclazyload-24.svg')}}"
+                      />
+
+                      <div class="background">
+                        <div class="pet-card-name-container-second">
+                          <div class="container30">
+                            <h3 class="autumn">Autumn</h3>
+                          </div>
+                        </div>
+                        <div class="pet-card-info-second">
+                          <div class="pet-card-age">
+                            <div class="item-young1">Young </div>
+                            <div class="pet-card-age-separator">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-calico1">Calico Mix</div>
+                          </div>
+                        </div>
+                        <div class="item5">
+                          <div class="miles-away">22 miles away</div>
+                        </div>
+                        <div class="background1"></div>
+                      </div>
+                      <div class="favorite-pj-mother-cat-o"></div>
+                    </div>
+                  </div>
+                  <div class="pfdc-pet-card-wrapper1">
+                    <div class="pfdc-pet-card">
+                      <div
+                        class="link-pj-mother-cat-oak"
+                        id="linkMateoAdoptableCatA"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-25.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="pet-card-name-container-third">
+                            <div class="container27">
+                              <h3 class="austin">Mateo</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="favorite-pj-mother-cat-o"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="female-cards">
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkCamryAdoptableCatK"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-26.svg')}}"
+                        />
+
+                        <div class="background2">
+                          <div class="container-wrapper12">
+                            <div class="container27">
+                              <h3 class="austin">Camry</h3>
+                            </div>
+                          </div>
+                          <div class="female-traits">
+                            <div class="item-kitten">Kitten</div>
+                            <div class="pet-card-separator-third">
+                              <div class="div">•</div>
+                            </div>
+                            <div class="pf-truncate-domestic1">
+                              Domestic Short H
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkLuckyAdoptableCatA"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-27.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="frame-div">
+                            <div class="container27">
+                              <h3 class="austin">Lucky</h3>
+                            </div>
+                          </div>
+                          <div class="pet-card-info">
+                            <div class="pet-card-age">
+                              <div class="item-adult">Adult </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-domestic">
+                                Domestic Short Hair
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item5">
+                            <div class="miles-away">25 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkMsPenelopeAdoptable"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-28.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="container-wrapper14">
+                            <div class="container27">
+                              <h3 class="austin">Ms.Penelope</h3>
+                            </div>
+                          </div>
+                          <div class="background-inner5">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-calico">Calico</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkMetallicaAdoptableCa"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-29.svg')}}"
+                        />
+
+                        <div class="background">
+                          <div class="container-wrapper15">
+                            <div class="container27">
+                              <h3 class="austin">Metallica</h3>
+                            </div>
+                          </div>
+                          <div class="background-inner10">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="pet-card-age-separator">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-siamese2">Siamese</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pfdc-pet-card1">
+                      <div
+                        class="link-lilly-adoptable-cat-a"
+                        id="linkShishitoAdoptableCat"
+                      >
+                        <img
+                          class="pfdc-lazy-load-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for('static',filename='public4/pfdclazyload-30.svg')}}"
+                        />
+
+                        <div class="background14">
+                          <div class="container-wrapper16">
+                            <div class="container27">
+                              <h3 class="austin">Shishito</h3>
+                            </div>
+                          </div>
+                          <div class="traits">
+                            <div class="pet-card-age">
+                              <div class="item-kitten3">Kitten </div>
+                              <div class="mixed-icon-container">
+                                <div class="div">•</div>
+                              </div>
+                              <div class="pf-truncate-tabby">Tabby</div>
+                            </div>
+                          </div>
+                          <div class="item9">
+                            <div class="miles-away">28 miles away</div>
+                          </div>
+                          <div class="background1"></div>
+                        </div>
+                        <div class="animal-container">
+                          {% for cat in cats %}
+                          <div class="animal-item">
+                              <img src="{{ url_for('static', filename='uploads/' ~ cat.image_filename) }}" alt="{{ cat.name }}" class="animal-image">
+                              <h2>{{ cat.name }}</h2>
+                              <p>{{ cat.breed }}</p>
+                              <a href="/cat/{{ cat.id }}">View Details</a>
+                              <form action="/delete_cat/{{ cat.id }}" method="POST" style="display: inline;">
+                                  <button type="submit" class="delete-button">Delete</button>
+                              </form>
+                          </div>
+                          {% endfor %}
+                      </div>
+                      <a href="/add_cat">Add a new cat</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="background62">
+          <div class="container57">
+            <div class="container58"></div>
+            <div class="container59">
+              <div class="container60">
+                <div class="container61">
+                  <div class="heading-2margin">
+                    <div class="heading-2">
+                      <div class="resources">Resources</div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="container4">
+                      <div class="link1">
+                        <a
+                          class="faqs"
+                          href="https://www.petfinder.com/adopt-or-get-involved/adopting-pets/how-to/pet-adoption-faqs/"
+                          target="_blank"
+                          >FAQs</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link2">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/about-petfinder/mobile-app-download/"
+                          target="_blank"
+                          >Mobile App Download</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link3">
+                        <a
+                          class="partnerships"
+                          href="https://www.petfinder.com/partnerships/"
+                          target="_blank"
+                          >Partnerships</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link4">
+                        <a
+                          class="mobile-app-download"
+                          href="https://newscenter.purina.com/"
+                          target="_blank"
+                          >News Center</a
+                        >
+                      </div>
+                    </div>
+                    <div class="item39">
+                      <div class="link5">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/tools-widgets/custom-pet-list/getting-started/"
+                          target="_blank"
+                          >Put Petfinder On Your Site</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link6">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/developers/"
+                          target="_blank"
+                          >For Developers</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link1">
+                        <a
+                          class="contact-us"
+                          href="https://www.petfinder.com/contact/"
+                          target="_blank"
+                          >Contact Us</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container62">
+                  <div class="heading-2margin">
+                    <div class="heading-2">
+                      <div class="resources">Adopt or Get Involved</div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="container4">
+                      <div class="link8">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/"
+                          target="_blank"
+                          >All Adopt or Get Involved</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link9">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/adopting-pets/"
+                          target="_blank"
+                          >Adopting Pets</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link10">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/animal-shelters-rescues/"
+                          target="_blank"
+                          >Animal Shelters & Rescues</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link11">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/other-pets/"
+                          target="_blank"
+                          >Other Types of Pets</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container63">
+                  <div class="heading-2margin">
+                    <div class="heading-2">
+                      <div class="resources">About Dogs & Puppies</div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="container4">
+                      <div class="link12">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/"
+                          target="_blank"
+                          >All About Dogs & Puppies</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link13">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/adoption/"
+                          target="_blank"
+                          >Dog Adoption</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link1">
+                        <a
+                          class="dog-breeds"
+                          href="https://www.petfinder.com/dogs-and-puppies/breeds/"
+                          target="_blank"
+                          >Dog Breeds</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link15">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/feeding/"
+                          target="_blank"
+                          >Feeding Your Dog</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link13">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/behavior/"
+                          target="_blank"
+                          >Dog Behavior</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link17">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/health-wellness/"
+                          target="_blank"
+                          >Dog Health & Wellness</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link18">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/training/"
+                          target="_blank"
+                          >Dog Training</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link19">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/information/"
+                          target="_blank"
+                          >Other Dog Information</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container64">
+                  <div class="heading-2margin">
+                    <div class="heading-2">
+                      <div class="resources">About Cats & Kittens</div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="container4">
+                      <div class="link20">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/"
+                          target="_blank"
+                          >All About Cats & Kittens</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link4">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/adoption/"
+                          target="_blank"
+                          >Cat Adoption</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link1">
+                        <a
+                          class="cat-breeds"
+                          href="https://www.petfinder.com/cats-and-kittens/breeds/"
+                          target="_blank"
+                          >Cat Breeds</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link23">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/feeding/"
+                          target="_blank"
+                          >Feeding Your Cat</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link4">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/behavior/"
+                          target="_blank"
+                          >Cat Behavior</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link25">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/health-wellness/"
+                          target="_blank"
+                          >Cat Health & Wellness</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link26">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/training/"
+                          target="_blank"
+                          >Cat Training</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container4">
+                      <div class="link27">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/information/"
+                          target="_blank"
+                          >Other Cat Information</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="legal">
+              <div class="list4">
+                <div class="item62">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/register/"
+                    target="_blank"
+                    >Shelter & Rescue Registration</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item63">
+                  <a
+                    class="sitemap"
+                    href="https://www.petfinder.com/sitemap/"
+                    target="_blank"
+                    >Sitemap</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item64">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/terms-of-service/"
+                    target="_blank"
+                    >Terms of Service</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item65">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/privacy-policy/en/#notice-at-collection"
+                    target="_blank"
+                    >Notice at Collection</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item66">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/privacy-policy/en/"
+                    target="_blank"
+                    >Privacy Policy (updated)</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item67">
+                  <a
+                    class="accessibility"
+                    href="https://www.purina.com/accessibility"
+                    target="_blank"
+                    >Accessibility</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item68">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.purina.com/cookie-policy"
+                    target="_blank"
+                    >Cookie Policy</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item69">
+                  <div class="button1">
+                    <div class="container13">
+                      <div class="your-privacy-choices">
+                        Your Privacy Choices
+                      </div>
+                    </div>
+                    <img
+                      class="privacy-icon"
+                      loading="lazy"
+                      alt=""
+                      src="{{url_for('static',filename='public4/frame.svg')}}"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background63">
+          <div class="container66">
+            <div class="margin2">
+              <div class="paragraph">
+                <div class="petfindercom">©2024 Petfinder.com</div>
+                <div class="all-trademarks-are">
+                  All trademarks are owned by Société des Produits Nestlé S.A.,
+                  or used with permission.
+                </div>
+              </div>
+            </div>
+            <div class="container67">
+              <div class="list5">
+                <div class="link1">
+                  <div class="link-facebook" id="linkFacebook">
+                    <img
+                      class="svg-icon1"
+                      loading="lazy"
+                      alt=""
+                      src="{{url_for('static',filename='public4/svg-1.svg')}}"
+                    />
+                  </div>
+                </div>
+                <div class="link-facebook" id="itemLinkTwitter">
+                  <img
+                    class="svg-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="{{url_for('static',filename='public4/svg-2.svg')}}"
+                  />
+                </div>
+                <div class="link-facebook" id="itemLinkInstagram">
+                  <img
+                    class="svg-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="{{url_for('static',filename='public4/svg-3.svg')}}"
+                  />
+                </div>
+                <div class="link-facebook" id="itemLinkYouTube">
+                  <img
+                    class="svg-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="{{url_for('static',filename='public4/svg-4.svg')}}"
+                  />
+                </div>
+                <div class="link-facebook" id="itemLinkPinterest">
+                  <img
+                    class="svg-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="{{url_for('static',filename='public4/svg-5.svg')}}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var linkContainer = document.getElementById("linkContainer");
+      if (linkContainer) {
+        linkContainer.addEventListener("click", function () {
+          window.open("https://www.petfinder.com/user/favorites/");
+        });
+      }
+
+      var linkPJMotherCatOak = document.getElementById("linkPJMotherCatOak");
+      if (linkPJMotherCatOak) {
+        linkPJMotherCatOak.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/pj-mother-cat-oakhurst-california-65376589/ca/oakhurst/kellen-rescue-ca1382/"
+          );
+        });
+      }
+
+      var linkAustinAdoptableCat = document.getElementById(
+        "linkAustinAdoptableCat"
+      );
+      if (linkAustinAdoptableCat) {
+        linkAustinAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/austin-72942468/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkAspenAdoptableCatK = document.getElementById(
+        "linkAspenAdoptableCatK"
+      );
+      if (linkAspenAdoptableCatK) {
+        linkAspenAdoptableCatK.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/aspen-72942495/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkParisAdoptableCatK = document.getElementById(
+        "linkParisAdoptableCatK"
+      );
+      if (linkParisAdoptableCatK) {
+        linkParisAdoptableCatK.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/paris-72942470/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkLillyAdoptableCatA = document.getElementById(
+        "linkLillyAdoptableCatA"
+      );
+      if (linkLillyAdoptableCatA) {
+        linkLillyAdoptableCatA.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/lilly-72826239/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkVenusAdoptableCatA = document.getElementById(
+        "linkVenusAdoptableCatA"
+      );
+      if (linkVenusAdoptableCatA) {
+        linkVenusAdoptableCatA.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/venus-50794279/ca/fresno/bandits-buddies-rescue-ca1778/"
+          );
+        });
+      }
+
+      var linkSmokeyAdoptableCat = document.getElementById(
+        "linkSmokeyAdoptableCat"
+      );
+      if (linkSmokeyAdoptableCat) {
+        linkSmokeyAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/smokey-72948044/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkLouiseAdoptableCat = document.getElementById(
+        "linkLouiseAdoptableCat"
+      );
+      if (linkLouiseAdoptableCat) {
+        linkLouiseAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/louise-72925693/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkStripesOakhurst = document.getElementById("linkStripesOakhurst");
+      if (linkStripesOakhurst) {
+        linkStripesOakhurst.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/stripes-oakhurst-ca-65181384/ca/oakhurst/kellen-rescue-ca1382/"
+          );
+        });
+      }
+
+      var linkBostonAdoptableCat = document.getElementById(
+        "linkBostonAdoptableCat"
+      );
+      if (linkBostonAdoptableCat) {
+        linkBostonAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/boston-72942488/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkEmaAdoptableCatAdu = document.getElementById(
+        "linkEmaAdoptableCatAdu"
+      );
+      if (linkEmaAdoptableCatAdu) {
+        linkEmaAdoptableCatAdu.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/ema-72942499/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkLeviAdoptableCatAd = document.getElementById(
+        "linkLeviAdoptableCatAd"
+      );
+      if (linkLeviAdoptableCatAd) {
+        linkLeviAdoptableCatAd.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/levi-72942477/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkTessaAdoptableCatA = document.getElementById(
+        "linkTessaAdoptableCatA"
+      );
+      if (linkTessaAdoptableCatA) {
+        linkTessaAdoptableCatA.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/tessa-72183719/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkBizkitAdoptableCat = document.getElementById(
+        "linkBizkitAdoptableCat"
+      );
+      if (linkBizkitAdoptableCat) {
+        linkBizkitAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/bizkit-72952348/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkCookieAdoptableCat = document.getElementById(
+        "linkCookieAdoptableCat"
+      );
+      if (linkCookieAdoptableCat) {
+        linkCookieAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/cookie-72943373/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkThelmaAdoptableCat = document.getElementById(
+        "linkThelmaAdoptableCat"
+      );
+      if (linkThelmaAdoptableCat) {
+        linkThelmaAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/thelma-72925681/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkSamMaleKittenOak = document.getElementById(
+        "linkSamMaleKittenOak"
+      );
+      if (linkSamMaleKittenOak) {
+        linkSamMaleKittenOak.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/sam-male-kitten-oakhurst-ca-65181181/ca/oakhurst/kellen-rescue-ca1382/"
+          );
+        });
+      }
+
+      var linkSavannahAdoptableCat = document.getElementById(
+        "linkSavannahAdoptableCat"
+      );
+      if (linkSavannahAdoptableCat) {
+        linkSavannahAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/savannah-72942497/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkPhoenixAdoptableCat = document.getElementById(
+        "linkPhoenixAdoptableCat"
+      );
+      if (linkPhoenixAdoptableCat) {
+        linkPhoenixAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/phoenix-72942473/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkSydneyAdoptableCat = document.getElementById(
+        "linkSydneyAdoptableCat"
+      );
+      if (linkSydneyAdoptableCat) {
+        linkSydneyAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/sydney-72942494/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkSophieAdoptableCat = document.getElementById(
+        "linkSophieAdoptableCat"
+      );
+      if (linkSophieAdoptableCat) {
+        linkSophieAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/sophie-72128527/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkMatildaAdoptableCat = document.getElementById(
+        "linkMatildaAdoptableCat"
+      );
+      if (linkMatildaAdoptableCat) {
+        linkMatildaAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/matilda-72952285/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkSnowflakeAdoptableCa = document.getElementById(
+        "linkSnowflakeAdoptableCa"
+      );
+      if (linkSnowflakeAdoptableCa) {
+        linkSnowflakeAdoptableCa.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/snowflake-72925740/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkJalapeoAdoptableCat = document.getElementById(
+        "linkJalapeoAdoptableCat"
+      );
+      if (linkJalapeoAdoptableCat) {
+        linkJalapeoAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/jalapeno-72925673/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkAutumnAdoptableCat = document.getElementById(
+        "linkAutumnAdoptableCat"
+      );
+      if (linkAutumnAdoptableCat) {
+        linkAutumnAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/autumn-71543488/ca/madera/sung-village-ca3218/"
+          );
+        });
+      }
+
+      var linkMateoAdoptableCatA = document.getElementById(
+        "linkMateoAdoptableCatA"
+      );
+      if (linkMateoAdoptableCatA) {
+        linkMateoAdoptableCatA.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/mateo-72942481/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkCamryAdoptableCatK = document.getElementById(
+        "linkCamryAdoptableCatK"
+      );
+      if (linkCamryAdoptableCatK) {
+        linkCamryAdoptableCatK.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/camry-72942498/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkLuckyAdoptableCatA = document.getElementById(
+        "linkLuckyAdoptableCatA"
+      );
+      if (linkLuckyAdoptableCatA) {
+        linkLuckyAdoptableCatA.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/lucky-72128520/ca/madera/madera-county-animal-control-ca628/"
+          );
+        });
+      }
+
+      var linkMsPenelopeAdoptable = document.getElementById(
+        "linkMsPenelopeAdoptable"
+      );
+      if (linkMsPenelopeAdoptable) {
+        linkMsPenelopeAdoptable.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/mspenelope-72948076/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkMetallicaAdoptableCa = document.getElementById(
+        "linkMetallicaAdoptableCa"
+      );
+      if (linkMetallicaAdoptableCa) {
+        linkMetallicaAdoptableCa.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/metallica-72925703/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkShishitoAdoptableCat = document.getElementById(
+        "linkShishitoAdoptableCat"
+      );
+      if (linkShishitoAdoptableCat) {
+        linkShishitoAdoptableCat.addEventListener("click", function () {
+          window.open(
+            "https://www.petfinder.com/cat/shishito-72925660/ca/fresno/cali-cats-animal-rescue-ca3221/"
+          );
+        });
+      }
+
+      var linkFacebook = document.getElementById("linkFacebook");
+      if (linkFacebook) {
+        linkFacebook.addEventListener("click", function () {
+          window.open("https://www.facebook.com/Petfinder");
+        });
+      }
+
+      var itemLinkTwitter = document.getElementById("itemLinkTwitter");
+      if (itemLinkTwitter) {
+        itemLinkTwitter.addEventListener("click", function () {
+          window.open("https://twitter.com/Petfinder");
+        });
+      }
+
+      var itemLinkInstagram = document.getElementById("itemLinkInstagram");
+      if (itemLinkInstagram) {
+        itemLinkInstagram.addEventListener("click", function () {
+          window.open("https://www.instagram.com/petfinder/");
+        });
+      }
+
+      var itemLinkYouTube = document.getElementById("itemLinkYouTube");
+      if (itemLinkYouTube) {
+        itemLinkYouTube.addEventListener("click", function () {
+          window.open(
+            "https://www.youtube.com/channel/UC85FmJhwKDfiXfialMvyM5g"
+          );
+        });
+      }
+
+      var itemLinkPinterest = document.getElementById("itemLinkPinterest");
+      if (itemLinkPinterest) {
+        itemLinkPinterest.addEventListener("click", function () {
+          window.open("https://www.pinterest.com/petfinder/");
+        });
+      }
+    </script>
+  </body>
+</html>

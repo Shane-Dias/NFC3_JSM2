@@ -83,6 +83,13 @@ def allowed_file(filename):
 def map():
     return render_template('map.html')
 
+@app.route('/adoptpet/Dogs')
+def adoptdogs():
+    return render_template('dog.html')
+
+@app.route('/adoptpet/Cats')
+def adoptcats():
+    return render_template('cat.html')
 
 @app.route('/add_cat', methods=['GET', 'POST'])
 def add_cat():
