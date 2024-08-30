@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopted Animals</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Adopted Animals</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Animal Name</th>
+                    <th>Animal Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for adoption in adoptions %}
+                <tr>
+                    <td>{{ adoption.user.username }}</td>
+                    <td>
+                        {% if adoption.animal_type == 'cat' %}
+                            {{ get_cat_name(adoption.animal_id) }}
+                        {% elif adoption.animal_type == 'dog' %}
+                            {{ get_dog_name(adoption.animal_id) }}
+                        {% endif %}
+                    </td>
+                    <td>{{ adoption.animal_type }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

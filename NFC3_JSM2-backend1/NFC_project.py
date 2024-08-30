@@ -66,6 +66,7 @@ class Dog(db.Model):
         self.image_filename = image_filename
 
 
+
 # Initialize tables within app context
 with app.app_context():
     db.create_all()
@@ -83,11 +84,11 @@ def allowed_file(filename):
 def map():
     return render_template('map.html')
 
-@app.route('/adoptpet/Dogs')
+@app.route('/adoptpet/Dog')
 def adoptdogs():
     return render_template('dog.html')
 
-@app.route('/adoptpet/Cats')
+@app.route('/adoptpet/Cat')
 def adoptcats():
     return render_template('cat.html')
 
@@ -172,6 +173,20 @@ def delete_dog(dog_id):
     db.session.delete(dog)
     db.session.commit()
     return redirect('/dogs')
+
+@app.route('/adopted_animals')
+def adopted_animals():
+    adoptions = Adoption.query.all()
+    return render_template('adopted_animals.html', adoptions=adoptions, get_cat_name=get_cat_name, get_dog_name=get_dog_name)
+
+def get_cat_name(cat_id):
+    cat = Cat.query.get(cat_id)
+    return cat.name if cat else 'Unknown'
+
+def get_dog_name(dog_id):
+    dog = Dog.query.get(dog_id)
+    return dog.name if dog else 'Unknown'
+
 
 @app.route('/')
 def hello_world():
