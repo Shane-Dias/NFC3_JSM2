@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='petglobal.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='petindex.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="root">
+      <header class="background">
+        <div class="container">
+          <div class="container1">
+            <div class="buttonmargin">
+              <div class="button">
+                <img
+                  class="image-icon"
+                  loading="lazy"
+                  alt=""
+                  src="{{ url_for('static', filename='public5/image.svg') }}"
+                />
+
+                <a class="all-about-pets">All About Pets</a>
+              </div>
+            </div>
+          </div>
+          <div class="link" id="linkContainer">
+            <img
+              class="svg-icon"
+              loading="lazy"
+              alt=""
+              src="{{ url_for('static', filename='public5/svg.svg') }}"
+            />
+          </div>
+          <div class="margin">
+            <div class="container2">
+              <div class="container3">
+                <div class="button-dialog">
+                  <div class="container4">
+                    <img
+                      class="svg-icon1"
+                      loading="lazy"
+                      alt=""
+                      src="{{ url_for('static', filename='public5/svg-1.svg') }}"
+                    />
+
+                    <div class="margin1">
+                      <a class="sign-in">Sign In</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="backgroundshadow">
+        <div class="list-primary">
+          <div class="item">
+            <div class="link1">
+              <a
+                class="adopt-or-get"
+                href="https://www.petfinder.com/adopt-or-get-involved/"
+                target="_blank"
+                >Adopt or Get Involved</a
+              >
+            </div>
+          </div>
+          <div class="item1">
+            <div class="link2">
+              <a
+                class="adopt-or-get"
+                href="https://www.petfinder.com/dogs-and-puppies/"
+                target="_blank"
+                >Dogs & Puppies</a
+              >
+            </div>
+          </div>
+          <div class="item2">
+            <div class="link3">
+              <a
+                class="adopt-or-get"
+                href="https://www.petfinder.com/cats-and-kittens/"
+                target="_blank"
+                >Cats & Kittens</a
+              >
+            </div>
+          </div>
+          <div class="item3">
+            <div class="link4">
+              <a
+                class="adopt-or-get"
+                href="https://www.petfinder.com/other-pets/"
+                target="_blank"
+                >Other Types of Pets</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container5"></div>
+      <section class="container-parent">
+        <div class="container6">
+          <img
+            class="imagebackground-icon"
+            loading="lazy"
+            alt=""
+            src="{{ url_for('static', filename='public5/imagebackground@2x.png') }}"
+          />
+        </div>
+        <div class="container7">
+          <div class="container8">
+            <div class="container9">
+              <div class="heading-1">
+                <h1 class="loving-pet-care-container">
+                  <span class="loving-pet-care-container1">
+                    <p class="loving-pet-care">Loving pet care in your</p>
+                    <p class="loving-pet-care">neighborhood™</p>
+                  </span>
+                </h1>
+              </div>
+            </div>
+            <h1 class="heading-2">Book trusted sitters and dog walkers.</h1>
+          </div>
+        </div>
+      </section>
+      <section class="root-inner">
+        <div class="frame-parent">
+          <div class="frame-wrapper">
+            <div class="container-group">
+              <div class="container10">
+                <div class="heading-3">
+                  <h1 class="services-for-every">
+                    Services for every dog and cat
+                  </h1>
+                </div>
+                <div class="list">
+                  <div class="listitem">
+                    <div class="container11">
+                      <div class="container12">
+                        <img
+                          class="svg-icon2"
+                          loading="lazy"
+                          alt=""
+                          src="{{ url_for('static', filename='public5/svg-2.svg') }}"
+                        />
+                      </div>
+                    </div>
+                    <div class="margin2">
+                      <div class="container13">
+                        <b class="boarding">Boarding</b>
+                        <div class="container14">
+                          <div class="your-pets-stay-container">
+                            <p class="loving-pet-care">
+                              Your pets stay overnight in your sitter’s home.
+                              They’ll be
+                            </p>
+                            <p class="loving-pet-care">
+                              treated like part of the family in a comfortable
+                              environment.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listitemmargin">
+                    <div class="listitem">
+                      <div class="container11">
+                        <div class="container12">
+                          <img
+                            class="svg-icon2"
+                            loading="lazy"
+                            alt=""
+                            src="{{ url_for('static', filename='public5/svg-3.svg') }}"
+                          />
+                        </div>
+                      </div>
+                      <div class="margin2">
+                        <div class="container13">
+                          <b class="house-sitting">House Sitting</b>
+                          <div class="container14">
+                            <div class="your-pets-stay-container">
+                              <p class="loving-pet-care">
+                                Your sitter takes care of your pets and your
+                                house. Your pets
+                              </p>
+                              <p class="loving-pet-care">
+                                will get all the attention they need from the
+                                comfort of home.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listitemmargin">
+                    <div class="listitem">
+                      <div class="container11">
+                        <div class="container12">
+                          <img
+                            class="svg-icon2"
+                            loading="lazy"
+                            alt=""
+                            src="{{ url_for('static', filename='public5/svg-4.svg') }}"
+                          />
+                        </div>
+                      </div>
+                      <div class="margin4">
+                        <div class="container13">
+                          <b class="dog-walking">Dog Walking</b>
+                          <div class="container14">
+                            <div class="your-pets-stay-container">
+                              <p class="loving-pet-care">
+                                Your dog gets a walk around your neighborhood.
+                                Perfect for
+                              </p>
+                              <p class="loving-pet-care">
+                                busy days and dogs with extra energy to burn.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listitemmargin2">
+                    <div class="listitem">
+                      <div class="container11">
+                        <div class="container12">
+                          <img
+                            class="svg-icon2"
+                            loading="lazy"
+                            alt=""
+                            src="{{ url_for('static', filename='public5/svg-5.svg') }}"
+                          />
+                        </div>
+                      </div>
+                      <div class="margin2">
+                        <div class="container13">
+                          <b class="doggy-day-care">Doggy Day Care</b>
+                          <div class="container14">
+                            <div class="your-pets-stay-container">
+                              <p class="loving-pet-care">
+                                Your dog spends the day at your sitter’s home.
+                                Drop them off
+                              </p>
+                              <p class="loving-pet-care">
+                                in the morning and pick up a happy pup in the
+                                evening.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listitemmargin3">
+                    <div class="listitem">
+                      <div class="container11">
+                        <div class="container12">
+                          <img
+                            class="svg-icon2"
+                            loading="lazy"
+                            alt=""
+                            src="{{ url_for('static', filename='public5/svg-6.svg') }}"
+                          />
+                        </div>
+                      </div>
+                      <div class="margin2">
+                        <div class="container13">
+                          <b class="drop-in-visits">Drop-In Visits</b>
+                          <div class="container14">
+                            <div class="your-pets-stay-container">
+                              <p class="loving-pet-care">
+                                Your sitter drops by your home to play with your
+                                pets, offer
+                              </p>
+                              <p class="loving-pet-care">
+                                food, and give potty breaks or clean the litter
+                                box.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listitemmargin">
+                    <div class="listitem">
+                      <div class="container11">
+                        <div class="container12">
+                          <img
+                            class="svg-icon2"
+                            loading="lazy"
+                            alt=""
+                            src="{{ url_for('static', filename='public5/svg-7.svg') }}"
+                          />
+                        </div>
+                      </div>
+                      <div class="margin2">
+                        <div class="container13">
+                          <b class="dog-training">Dog Training </b>
+                          <div class="container14">
+                            <div class="your-pets-stay-container">
+                              <p class="loving-pet-care">
+                                Private, virtual dog training through PURRFECT.
+                                Train from the
+                              </p>
+                              <p class="loving-pet-care">
+                                comfort of your home through 1-1 video chat.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="booking-benefits-wrapper">
+                <div class="booking-benefits">
+                  <div class="frame-group">
+                    <div class="container-wrapper">
+                      <div class="container35">
+                        <div class="container36">
+                          <div class="margin8">
+                            <img
+                              class="svg-icon8"
+                              loading="lazy"
+                              alt=""
+                              src="{{
+                            url_for('static', filename='public5/svg-8.svg') }}"
+                            />
+                          </div>
+                          <div class="heading-31">
+                            <a class="purr-protect">PURR Protect</a>
+                          </div>
+                        </div>
+                        <div class="heading-3margin">
+                          <div class="container3">
+                            <h3 class="find-peace-of-container">
+                              <p class="loving-pet-care">
+                                Find peace of mind with every
+                              </p>
+                              <p class="loving-pet-care">booking.</p>
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="margin9">
+                          <div class="container37">
+                            <div class="strong-screened-container">
+                              <p class="loving-pet-care">
+                                <b class="screened-pet-sitters"
+                                  >Screened pet sitters</b
+                                >
+                                <span> have already</span>
+                              </p>
+                              <p class="loving-pet-care">
+                                passed a third-party background
+                              </p>
+                              <p class="loving-pet-care">
+                                check and show verified reviews from
+                              </p>
+                              <p class="loving-pet-care">
+                                other pet parents, like you.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      class="rover-protect-homepagepng-icon"
+                      loading="lazy"
+                      alt=""
+                      src="{{ url_for('static',filename='public5/roverprotecthomepagepng@2x.png') }}"
+                    />
+                  </div>
+                  <div class="container38">
+                    <div class="strong-messaging-container">
+                      <b>Messaging & photo updates</b>
+                      <span> from your sitter during each stay.</span>
+                    </div>
+                  </div>
+                  <div class="container39">
+                    <div class="strong-messaging-container">
+                      <p class="loving-pet-care">
+                        <b class="screened-pet-sitters">24/7 support</b>
+                        <span>
+                          from the Rover team–here to help if you ever
+                          need</span
+                        >
+                      </p>
+                      <p class="loving-pet-care">someone to talk to.</p>
+                    </div>
+                  </div>
+                  <div class="container40">
+                    <button class="link5" id="link">
+                      <div class="container41">
+                        <div class="container42">
+                          <a class="book-a-local" href="" target="_blank"
+                            >Book a local sitter</a
+                          >
+                        </div>
+                      </div>
+                    </button>
+                    <div class="link6" id="linkContainer">
+                      <div class="container43">
+                        <div class="container44"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-smiling-woman-sitting-in-parent">
+            <div class="img-smiling-woman-sitting-in">
+              <div class="backgroundborder">
+                <div class="separator"></div>
+                <h1 class="i-was-nervous-container">
+                  <p class="loving-pet-care">I was nervous to leave</p>
+                  <p class="loving-pet-care">Sam with strangers, but</p>
+                  <p class="loving-pet-care">my worries quickly faded.</p>
+                  <p class="loving-pet-care">Going forward Rover will</p>
+                  <p class="loving-pet-care">be my first choice for pet</p>
+                  <p class="loving-pet-care">
+                    <span>sitting. </span>
+                    <span class="molly-s"> - Molly S.</span>
+                  </p>
+                </h1>
+              </div>
+            </div>
+            <div class="img-smiling-woman-holding-a">
+              <div class="backgroundborder">
+                <div class="separator"></div>
+                <h1 class="i-was-nervous-container">
+                  <p class="loving-pet-care">My sitter took great care</p>
+                  <p class="loving-pet-care">of my cat, above and</p>
+                  <p class="loving-pet-care">beyond my expectations.</p>
+                  <p class="loving-pet-care">I would book with Rover</p>
+                  <p class="loving-pet-care">again in a heartbeat!</p>
+                  <p class="danielle-h"> - Danielle H.</p>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container45"></div>
+      <section class="root-child">
+        <div class="frame-container">
+          <div class="meet-local-sitters-who-will-tr-wrapper">
+            <h1 class="meet-local-sitters">
+              Meet local sitters who will treat your pets like family
+            </h1>
+          </div>
+          <div class="how-it-works">
+            <div class="item4">
+              <div class="container46">
+                <div class="container47">
+                  <img
+                    class="aa73ac7b9fadfb0cwebp-icon"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='public5/2345aa73ac7b9fadfb0cwebp@2x.png') }}"
+                  />
+                </div>
+                <div class="margin10">
+                  <div class="container48">
+                    <div class="heading-33">
+                      <h3 class="search">1. Search</h3>
+                    </div>
+                    <div class="read-verified-reviews-container">
+                      <p class="loving-pet-care">
+                        Read verified reviews by pet parents
+                      </p>
+                      <p class="loving-pet-care">
+                        like you and choose a screened sitter
+                      </p>
+                      <p class="loving-pet-care">
+                        who’s a great match for you and your
+                      </p>
+                      <p class="loving-pet-care">pets.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item5">
+              <div class="container49">
+                <div class="container47">
+                  <img
+                    class="aa73ac7b9fadfb0cwebp-icon"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='public5/229d77251a07eb6b2a81webp@2x.png') }}"
+                  />
+                </div>
+                <div class="margin10">
+                  <div class="container48">
+                    <div class="heading-34">
+                      <h3 class="find-peace-of-container">2. Book & pay</h3>
+                    </div>
+                    <div class="read-verified-reviews-container">
+                      <p class="loving-pet-care">
+                        No cash or checks needed—we make
+                      </p>
+                      <p class="loving-pet-care">
+                        it simple to book and make secured
+                      </p>
+                      <p class="loving-pet-care">
+                        payments through our website or app.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item6">
+              <div class="container52">
+                <div class="container47">
+                  <img
+                    class="d21ed973708e1221e7cwebp-icon"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='public5/5d21ed973708e1221e7cwebp@2x.png') }}"
+                  />
+                </div>
+                <div class="margin10">
+                  <div class="container48">
+                    <div class="heading-35">
+                      <h3 class="relax">3. Relax</h3>
+                    </div>
+                    <div class="read-verified-reviews-container">
+                      <p class="loving-pet-care">
+                        Stay in touch with photos and
+                      </p>
+                      <p class="loving-pet-care">
+                        messaging. Plus, your booking is
+                      </p>
+                      <p class="loving-pet-care">
+                        backed by RoverProtect, including
+                      </p>
+                      <p class="loving-pet-care">
+                        24/7 support and reimbursement for
+                      </p>
+                      <p class="loving-pet-care">eligible vet care.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="background-parent">
+        <div class="background1">
+          <div class="container55">
+            <div class="container56"></div>
+            <div class="container57">
+              <div class="container58">
+                <div class="container59">
+                  <div class="heading-2margin">
+                    <div class="heading-21">
+                      <div class="resources">Resources</div>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <div class="container3">
+                      <div class="link7">
+                        <a
+                          class="faqs"
+                          href="https://www.petfinder.com/adopt-or-get-involved/adopting-pets/how-to/pet-adoption-faqs/"
+                          target="_blank"
+                          >FAQs</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link8">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/about-petfinder/mobile-app-download/"
+                          target="_blank"
+                          >Mobile App Download</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link9">
+                        <a
+                          class="partnerships"
+                          href="https://www.petfinder.com/partnerships/"
+                          target="_blank"
+                          >Partnerships</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link10">
+                        <a
+                          class="mobile-app-download"
+                          href="https://newscenter.purina.com/"
+                          target="_blank"
+                          >News Center</a
+                        >
+                      </div>
+                    </div>
+                    <div class="item11">
+                      <div class="link11">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/tools-widgets/custom-pet-list/getting-started/"
+                          target="_blank"
+                          >Put Petfinder On Your Site</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link12">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/developers/"
+                          target="_blank"
+                          >For Developers</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link7">
+                        <a
+                          class="contact-us"
+                          href="https://www.petfinder.com/contact/"
+                          target="_blank"
+                          >Contact Us</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container60">
+                  <div class="heading-2margin">
+                    <div class="heading-21">
+                      <div class="resources">Adopt or Get Involved</div>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <div class="container3">
+                      <div class="link14">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/"
+                          target="_blank"
+                          >All Adopt or Get Involved</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link15">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/adopting-pets/"
+                          target="_blank"
+                          >Adopting Pets</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link16">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/adopt-or-get-involved/animal-shelters-rescues/"
+                          target="_blank"
+                          >Animal Shelters & Rescues</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link17">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/other-pets/"
+                          target="_blank"
+                          >Other Types of Pets</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container61">
+                  <div class="heading-2margin">
+                    <div class="heading-21">
+                      <div class="resources">About Dogs & Puppies</div>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <div class="container3">
+                      <div class="link18">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/"
+                          target="_blank"
+                          >All About Dogs & Puppies</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link19">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/adoption/"
+                          target="_blank"
+                          >Dog Adoption</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link7">
+                        <a
+                          class="dog-breeds"
+                          href="https://www.petfinder.com/dogs-and-puppies/breeds/"
+                          target="_blank"
+                          >Dog Breeds</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link21">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/feeding/"
+                          target="_blank"
+                          >Feeding Your Dog</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link19">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/behavior/"
+                          target="_blank"
+                          >Dog Behavior</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link23">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/health-wellness/"
+                          target="_blank"
+                          >Dog Health & Wellness</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link24">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/training/"
+                          target="_blank"
+                          >Dog Training</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link25">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/dogs-and-puppies/information/"
+                          target="_blank"
+                          >Other Dog Information</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container62">
+                  <div class="heading-2margin">
+                    <div class="heading-21">
+                      <div class="resources">About Cats & Kittens</div>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <div class="container3">
+                      <div class="link26">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/"
+                          target="_blank"
+                          >All About Cats & Kittens</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link10">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/adoption/"
+                          target="_blank"
+                          >Cat Adoption</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link7">
+                        <a
+                          class="cat-breeds"
+                          href="https://www.petfinder.com/cats-and-kittens/breeds/"
+                          target="_blank"
+                          >Cat Breeds</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link29">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/feeding/"
+                          target="_blank"
+                          >Feeding Your Cat</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link10">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/behavior/"
+                          target="_blank"
+                          >Cat Behavior</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link31">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/health-wellness/"
+                          target="_blank"
+                          >Cat Health & Wellness</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link32">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/training/"
+                          target="_blank"
+                          >Cat Training</a
+                        >
+                      </div>
+                    </div>
+                    <div class="container3">
+                      <div class="link33">
+                        <a
+                          class="mobile-app-download"
+                          href="https://www.petfinder.com/cats-and-kittens/information/"
+                          target="_blank"
+                          >Other Cat Information</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-links-container">
+              <div class="list5">
+                <div class="item34">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/register/"
+                    target="_blank"
+                    >Shelter & Rescue Registration</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item35">
+                  <a
+                    class="sitemap"
+                    href="https://www.petfinder.com/sitemap/"
+                    target="_blank"
+                    >Sitemap</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item36">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/terms-of-service/"
+                    target="_blank"
+                    >Terms of Service</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item37">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/privacy-policy/en/#notice-at-collection"
+                    target="_blank"
+                    >Notice at Collection</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item38">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.petfinder.com/privacy-policy/en/"
+                    target="_blank"
+                    >Privacy Policy (updated)</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item39">
+                  <a
+                    class="accessibility"
+                    href="https://www.purina.com/accessibility"
+                    target="_blank"
+                    >Accessibility</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item40">
+                  <a
+                    class="shelter-rescue"
+                    href="https://www.purina.com/cookie-policy"
+                    target="_blank"
+                    >Cookie Policy</a
+                  >
+                  <div class="vertical-divider"></div>
+                </div>
+                <div class="item41">
+                  <div class="button1">
+                    <div class="container63">
+                      <div class="your-privacy-choices">
+                        Your Privacy Choices
+                      </div>
+                    </div>
+                    <img
+                      class="frame-icon"
+                      loading="lazy"
+                      alt=""
+                      src="{{ url_for('static', filename='public5/frame.svg') }}"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background2">
+          <div class="container64">
+            <div class="margin13">
+              <div class="paragraph">
+                <div class="petfindercom">©2024 Petfinder.com</div>
+                <div class="all-trademarks-are">
+                  All trademarks are owned by Société des Produits Nestlé S.A.,
+                  or used with permission.
+                </div>
+              </div>
+            </div>
+            <div class="container65">
+              <div class="list6">
+                <div class="link7">
+                  <div class="link-facebook" id="linkFacebook">
+                    <img
+                      class="svg-icon9"
+                      loading="lazy"
+                      alt=""
+                      src="{{ url_for('static', filename='public5/svg-9.svg') }}"
+                    />
+                  </div>
+                </div>
+                <div class="link-facebook" id="itemLinkTwitter">
+                  <img
+                    class="svg-icon9"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='public5/svg-10.svg') }}"
+                  />
+                </div>
+                <div class="link-facebook" id="itemLinkInstagram">
+                  <img
+                    class="svg-icon9"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='public5/svg-11.svg') }}"
+                  />
+                </div>
+                <div class="link-facebook" id="itemLinkYouTube">
+                  <img
+                    class="svg-icon9"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='public5/svg-12.svg') }}"
+                  />
+                </div>
+                <div class="link-facebook" id="itemLinkPinterest">
+                  <img
+                    class="svg-icon9"
+                    loading="lazy"
+                    alt=""
+                    src="{{ url_for('static', filename='public5/svg-13.svg') }}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var linkContainer = document.getElementById("linkContainer");
+      if (linkContainer) {
+        linkContainer.addEventListener("click", function () {
+          window.open("https://www.petfinder.com/user/favorites/");
+        });
+      }
+
+      var link = document.getElementById("link");
+      if (link) {
+        link.addEventListener("click", function () {
+          window.open("https://www.rover.com/search");
+        });
+      }
+
+      var linkContainer = document.getElementById("linkContainer");
+      if (linkContainer) {
+        linkContainer.addEventListener("click", function () {
+          window.open("https://www.rover.com/rover-protect");
+        });
+      }
+
+      var linkFacebook = document.getElementById("linkFacebook");
+      if (linkFacebook) {
+        linkFacebook.addEventListener("click", function () {
+          window.open("https://www.facebook.com/Petfinder");
+        });
+      }
+
+      var itemLinkTwitter = document.getElementById("itemLinkTwitter");
+      if (itemLinkTwitter) {
+        itemLinkTwitter.addEventListener("click", function () {
+          window.open("https://twitter.com/Petfinder");
+        });
+      }
+
+      var itemLinkInstagram = document.getElementById("itemLinkInstagram");
+      if (itemLinkInstagram) {
+        itemLinkInstagram.addEventListener("click", function () {
+          window.open("https://www.instagram.com/petfinder/");
+        });
+      }
+
+      var itemLinkYouTube = document.getElementById("itemLinkYouTube");
+      if (itemLinkYouTube) {
+        itemLinkYouTube.addEventListener("click", function () {
+          window.open(
+            "https://www.youtube.com/channel/UC85FmJhwKDfiXfialMvyM5g"
+          );
+        });
+      }
+
+      var itemLinkPinterest = document.getElementById("itemLinkPinterest");
+      if (itemLinkPinterest) {
+        itemLinkPinterest.addEventListener("click", function () {
+          window.open("https://www.pinterest.com/petfinder/");
+        });
+      }
+    </script>
+  </body>
+</html>
