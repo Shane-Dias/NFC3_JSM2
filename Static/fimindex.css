@@ -1,0 +1,1560 @@
+.img-icon {
+  width: 1.625rem;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+}
+.link,
+.verticalborder {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.link {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--padding-3xl);
+  cursor: pointer;
+}
+.verticalborder {
+  border-right: 1px solid var(--wwwpetfindercom-french-gray);
+  flex-direction: row;
+  align-items: flex-start;
+}
+.svg-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+}
+.sign-in {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: inherit;
+  white-space: nowrap;
+}
+.container5,
+.margin1 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.margin1 {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 0.25rem;
+}
+.container5 {
+  flex-direction: row;
+  align-items: center;
+}
+.button-dialog,
+.container1,
+.container2,
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-dialog {
+  width: 100%;
+  border-radius: 999px;
+  background-color: var(--color-chocolate);
+  flex-direction: row;
+  padding: 0.437rem 1.75rem;
+  box-sizing: border-box;
+  max-width: 9.083rem;
+}
+.container1,
+.container2,
+.container3 {
+  flex: 1;
+  flex-direction: column;
+}
+.container1,
+.container2 {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.container2 {
+  padding: 0 0 0 2rem;
+}
+.container1 {
+  width: 14.75rem;
+}
+.container,
+.margin {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  max-width: 100%;
+}
+.margin {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-width: 15.521rem;
+}
+.container {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header,
+.pfdc-header {
+  display: flex;
+  justify-content: flex-start;
+}
+.header {
+  width: 100%;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 76.25rem;
+}
+.pfdc-header {
+  width: 90.375rem;
+  height: 4.375rem;
+  box-shadow: 0 1px 3px rgba(77, 71, 81, 0.2);
+  background-color: var(--wwwpetfindercom-white);
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 110%;
+  flex-shrink: 0;
+}
+.k-dogs {
+  position: relative;
+  display: inline-block;
+  min-width: 3.375rem;
+  white-space: nowrap;
+}
+.img-icon1 {
+  height: 100%;
+  width: 3.125rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+}
+.image-icon {
+  height: 0.375rem;
+  width: 1.25rem;
+  position: relative;
+}
+.pf-focus-manager-button-menu {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-8xl) 0.125rem var(--padding-8xl) var(--padding-49xl);
+  position: relative;
+  gap: 0.225rem;
+}
+.container9,
+.pfdc-animal-type-select {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.container9 {
+  flex-direction: column;
+  padding: 0 var(--padding-xl) 0 0;
+  min-width: 10.476rem;
+}
+.pfdc-animal-type-select {
+  height: 2.188rem;
+  flex-direction: row;
+  padding: 0;
+  min-width: 6.813rem;
+}
+.miles {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.4rem;
+  white-space: nowrap;
+}
+.container10,
+.container11 {
+  display: flex;
+  justify-content: flex-start;
+}
+.container11 {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container10 {
+  width: 3.994rem;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-4xl-5) 0.812rem var(--padding-4xl-5) 0;
+  box-sizing: border-box;
+}
+.button-menu-select-distance {
+  align-self: stretch;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.image-icon1 {
+  width: 0.875rem;
+  height: 0.875rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 1.813rem;
+  right: 1.125rem;
+  z-index: 1;
+}
+.pfdc-element,
+.pfdc-generic-select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pfdc-generic-select {
+  align-self: stretch;
+  position: relative;
+}
+.pfdc-element {
+  width: 8.119rem;
+}
+.near-california {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 4.688rem;
+}
+.button-search-locations-by-e {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.656rem var(--padding-xl) 0.718rem;
+  box-sizing: border-box;
+  min-width: 8.783rem;
+}
+.pfdc-element1,
+.pfdc-suggester {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.pfdc-element1 {
+  align-self: stretch;
+}
+.pfdc-suggester {
+  width: 8.781rem;
+}
+.container8,
+.save-search {
+  display: flex;
+  white-space: nowrap;
+}
+.container8 {
+  margin: 0;
+  width: 27.375rem;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--wwwpetfindercom-arial-narrow-14-upper-size);
+  color: var(--wwwpetfindercom-white);
+  font-family: var(--wwwpetfindercom-arial-narrow-12);
+}
+.save-search {
+  width: 5.063rem;
+  position: relative;
+  line-height: 1.225rem;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 3px rgba(77, 71, 81, 0.3);
+}
+.button,
+.container13 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(77, 71, 81, 0.2);
+  border-radius: 23px;
+  background-color: var(--wwwpetfindercom-white-02);
+  border: 2px solid var(--wwwpetfindercom-white);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-11xl);
+  max-width: 10.393rem;
+  white-space: nowrap;
+}
+.container13 {
+  flex: 1;
+  flex-direction: column;
+}
+.container12,
+.container7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container12 {
+  width: 9.063rem;
+  justify-content: center;
+}
+.container7 {
+  width: 100%;
+  justify-content: space-between;
+  max-width: 76.25rem;
+  gap: var(--gap-xl);
+}
+.backgroundshadow,
+.container6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container6 {
+  align-self: stretch;
+  align-items: center;
+  max-width: 100%;
+}
+.backgroundshadow {
+  margin-right: -7.75rem;
+  margin-bottom: 3.687rem;
+  width: 98.125rem;
+  box-shadow: 0 1px 3px rgba(77, 71, 81, 0.2);
+  background-color: var(--color-chocolate);
+  align-items: flex-start;
+  padding: 0 var(--padding-31xl);
+  box-sizing: border-box;
+  max-width: 119%;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--wwwpetfindercom-arial-narrow-14-upper-size);
+  color: var(--wwwpetfindercom-white);
+  font-family: var(--wwwpetfindercom-arial-narrow-12);
+}
+.purrfect-match {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+}
+.purrfect-match-wrapper {
+  width: 62rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.at-purrfect-match {
+  margin: 0;
+}
+.at-purrfect-match-container {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-xl);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-athiti);
+  color: var(--color-black);
+}
+.content,
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.main-content {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.687rem;
+}
+.content {
+  width: 82.188rem;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 6.75rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 3rem;
+  color: #ff3abd;
+  font-family: var(--font-audiowide);
+}
+.pfdc-lazy-load-icon {
+  height: 13.75rem;
+  width: 13.75rem;
+  position: relative;
+}
+.link-sylvie-aussie-or-mix,
+.pfdc-pet-card {
+  border: 1px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.link-sylvie-aussie-or-mix {
+  cursor: pointer;
+}
+.pfdc-pet-card {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: var(--br-5xs);
+  background-color: var(--wwwpetfindercom-white-02);
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 0.063rem;
+}
+.carlos {
+  margin: 0;
+  width: 5.25rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.25rem;
+}
+.followers-9 {
+  flex: 1;
+  position: relative;
+  line-height: 1.4rem;
+  white-space: nowrap;
+}
+.pet-card-info-container-list {
+  margin-top: -1.875rem;
+  width: 5.438rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+}
+.follow {
+  width: 3.438rem;
+  position: relative;
+  line-height: 1.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pet-card-social-container-list {
+  flex: 0.618;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-salmon);
+  border: 1px solid var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs) 0 var(--padding-2xl);
+}
+.chat {
+  width: 2.188rem;
+  position: relative;
+  line-height: 1.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pet-card-chat-container-list {
+  align-self: stretch;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-salmon);
+  border: 1px solid var(--color-black);
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-3xl) 0 var(--padding-11xl);
+}
+.pet-card-chat-container-list,
+.pet-card-chat-list,
+.pet-card-social-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pet-card-chat-list {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+}
+.pet-card-social-list {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-base);
+  font-size: var(--wwwpetfindercom-arial-narrow-13-size);
+}
+.background,
+.pet-card-grid,
+.pet-card-info-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.pet-card-info-list {
+  width: 12.125rem;
+  height: 4rem;
+  background-color: var(--wwwpetfindercom-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: flex-end;
+  padding: var(--padding-8xl) 0 var(--padding-2xs);
+  box-sizing: border-box;
+  gap: var(--gap-6xs);
+  font-size: var(--font-size-2xs);
+  font-family: var(--wwwpetfindercom-arial-narrow-12);
+}
+.background,
+.pet-card-grid {
+  align-items: flex-start;
+}
+.background {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--wwwpetfindercom-white);
+  border: 1px solid var(--color-black);
+  padding: var(--padding-sm) var(--padding-3xs) var(--padding-xl);
+}
+.pet-card-grid {
+  width: 13.75rem;
+}
+.robo {
+  margin: 0;
+  width: 3.813rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.813rem;
+}
+.background1 {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--wwwpetfindercom-white);
+  border: 1px solid var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-3xs) var(--padding-xl);
+  z-index: 1;
+}
+.sherlyn {
+  margin: 0;
+  width: 5.875rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.875rem;
+}
+.favorite-annie-mae-husky-mix {
+  height: 3.25rem;
+  width: 2.813rem;
+  margin: 0 !important;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 24.35px;
+  z-index: 1;
+}
+.link-annie-mae-husky-mix-ca {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  cursor: pointer;
+}
+.tom {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 2.813rem;
+}
+.chat-frame,
+.follow-frame,
+.followers-9-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.follow-frame {
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-salmon);
+  border: 1px solid var(--color-black);
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs) 0 var(--padding-2xl);
+}
+.chat-frame,
+.followers-9-frame {
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xs) 0 var(--padding-xs);
+}
+.chat-frame {
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-salmon);
+  border: 1px solid var(--color-black);
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xl) 0 var(--padding-11xl);
+  font-size: var(--wwwpetfindercom-arial-narrow-13-size);
+}
+.husky {
+  margin: 0;
+  width: 4.5rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.5rem;
+}
+.background4 {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--wwwpetfindercom-white);
+  border: 1px solid var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-3xs) var(--padding-xl);
+  z-index: 2;
+}
+.thiva {
+  margin: 0;
+  width: 3.875rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.875rem;
+}
+.pet-card {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1.3rem 8.625rem;
+  min-height: 44.438rem;
+  flex-shrink: 0;
+}
+.link-cinnabear-female-mix,
+.pet-card,
+.pfdc-pet-card6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.link-cinnabear-female-mix {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+}
+.pfdc-pet-card6 {
+  align-self: stretch;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: var(--br-5xs);
+  background-color: var(--wwwpetfindercom-white-02);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 0.063rem;
+}
+.bolt {
+  margin: 0;
+  width: 3.313rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.313rem;
+}
+.pet-card-info-container-compon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-12xs);
+}
+.pet-card-social-component-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-2xs);
+}
+.pet-card-info-component-list {
+  width: 12.125rem;
+  height: 4rem;
+  background-color: var(--wwwpetfindercom-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-8xl) 0 var(--padding-2xs);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  font-size: var(--wwwpetfindercom-arial-narrow-13-size);
+  font-family: var(--wwwpetfindercom-arial-narrow-12);
+}
+.link-brioni-california,
+.pet-card-items-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pet-card-items-list {
+  align-self: stretch;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.link-brioni-california {
+  flex: 1;
+  flex-direction: row;
+  cursor: pointer;
+}
+.doggo {
+  margin: 0;
+  width: 4.875rem;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.875rem;
+}
+.pet-card-container-list {
+  height: 44.419rem;
+  width: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-346xl-7);
+  box-sizing: border-box;
+  gap: var(--gap-xl-7);
+}
+.kit,
+.oggy,
+.smith {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 1.438rem;
+  font-weight: 400;
+  font-family: inherit;
+}
+.kit {
+  display: inline-block;
+  min-width: 2.125rem;
+}
+.oggy,
+.smith {
+  width: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.75rem;
+}
+.smith {
+  width: 4rem;
+  min-width: 4rem;
+}
+.pet-card-container-list-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  gap: var(--gap-xl);
+}
+.pets-content,
+.pets-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.pets-content {
+  width: 58.625rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.3rem;
+}
+.pets-content-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 5.375rem 10.981rem var(--padding-xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-arial-rounded-mt-bold);
+}
+.container16 {
+  align-self: stretch;
+  height: 2.188rem;
+  display: none;
+}
+.resources {
+  flex: 1;
+  position: relative;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+}
+.heading-2,
+.heading-2margin {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.heading-2margin {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-2xs);
+}
+.faqs {
+  position: relative;
+  line-height: 1rem;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 1.688rem;
+}
+.item,
+.link1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.item {
+  align-self: stretch;
+  flex-direction: column;
+}
+.mobile-app-download {
+  flex: 1;
+  position: relative;
+  line-height: 1rem;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.link2 {
+  width: 6.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.partnerships {
+  flex: 1;
+  position: relative;
+  line-height: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+.link3 {
+  width: 3.75rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.link3,
+.link4,
+.link5 {
+  flex-direction: row;
+}
+.link4 {
+  width: 3.875rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.link5 {
+  align-self: stretch;
+}
+.item4,
+.link5,
+.link6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.item4 {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 2.375rem 0 0;
+}
+.link6 {
+  width: 4.563rem;
+  flex-direction: row;
+}
+.contact-us {
+  position: relative;
+  line-height: 1rem;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 3.313rem;
+  white-space: nowrap;
+}
+.container19,
+.list {
+  flex-direction: column;
+}
+.list {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--wwwpetfindercom-arial-narrow-13-size);
+}
+.container19 {
+  width: 10.206rem;
+  padding: 0 0 var(--padding-5xl);
+  box-sizing: border-box;
+}
+.container19,
+.link8,
+.link9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.link8 {
+  width: 7.375rem;
+  flex-direction: row;
+}
+.link9 {
+  width: 4.188rem;
+}
+.link10,
+.link11,
+.link9 {
+  flex-direction: row;
+}
+.link10 {
+  width: 8.125rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.link11 {
+  width: 5.938rem;
+}
+.container20,
+.link11,
+.link12,
+.link13 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.container20 {
+  width: 11.569rem;
+  flex-direction: column;
+  padding: 0 0 6rem;
+  box-sizing: border-box;
+}
+.link12,
+.link13 {
+  width: 7.625rem;
+  flex-direction: row;
+}
+.link13 {
+  width: 4.063rem;
+}
+.dog-breeds {
+  position: relative;
+  line-height: 1rem;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 3.563rem;
+  white-space: nowrap;
+}
+.container21,
+.link15,
+.link17,
+.link18,
+.link19,
+.link20 {
+  width: 5.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.container21,
+.link17,
+.link18,
+.link19,
+.link20 {
+  width: 6.875rem;
+}
+.container21,
+.link18,
+.link19,
+.link20 {
+  width: 3.813rem;
+}
+.container21,
+.link19,
+.link20 {
+  width: 6.625rem;
+}
+.container21,
+.link20 {
+  width: 11.031rem;
+  flex-direction: column;
+}
+.link20 {
+  width: 7.063rem;
+  flex-direction: row;
+}
+.cat-breeds {
+  position: relative;
+  line-height: 1rem;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 3.375rem;
+  white-space: nowrap;
+}
+.container22,
+.link23,
+.link25,
+.link26,
+.link27 {
+  width: 5.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.container22,
+.link25,
+.link26,
+.link27 {
+  width: 6.688rem;
+}
+.container22,
+.link26,
+.link27 {
+  width: 3.625rem;
+}
+.container22,
+.link27 {
+  width: 6.438rem;
+}
+.container22 {
+  width: 10.625rem;
+  flex-direction: column;
+}
+.container17,
+.container18 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.container18 {
+  width: 43.431rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0;
+  row-gap: 20px;
+}
+.container17 {
+  align-self: stretch;
+  justify-content: flex-start;
+  min-height: 13.563rem;
+}
+.shelter-rescue {
+  flex: 1;
+  position: relative;
+  line-height: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.vertical-divider {
+  height: 0.625rem;
+  width: 0.063rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 0.288rem;
+  right: 0.625rem;
+  background-color: var(--wwwpetfindercom-white);
+}
+.item27 {
+  width: 9.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.sitemap {
+  flex: 1;
+  position: relative;
+  line-height: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+}
+.item28,
+.item29,
+.item30,
+.item31 {
+  width: 3.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: -0.038rem;
+}
+.item29,
+.item30,
+.item31 {
+  width: 5.875rem;
+}
+.item30,
+.item31 {
+  width: 6.563rem;
+}
+.item31 {
+  width: 7.938rem;
+}
+.accessibility {
+  position: relative;
+  line-height: 1.25rem;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 3.375rem;
+}
+.item32,
+.item33 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  position: relative;
+  margin-left: -0.038rem;
+}
+.item33 {
+  width: 5rem;
+  box-sizing: border-box;
+}
+.your-privacy-choices {
+  align-self: stretch;
+  position: relative;
+  line-height: 1.2rem;
+  white-space: nowrap;
+}
+.privacy-icon {
+  height: 0.75rem;
+  width: 1.563rem;
+  position: relative;
+}
+.button1,
+.item34 {
+  display: flex;
+  justify-content: flex-start;
+}
+.button1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5xs);
+}
+.item34 {
+  width: 9.188rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  margin-left: -0.038rem;
+  text-align: left;
+}
+.footer,
+.list4 {
+  flex-direction: row;
+  max-width: 100%;
+}
+.list4 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.footer {
+  align-self: stretch;
+  padding: 0 var(--padding-31xl);
+  text-align: center;
+  font-size: var(--wwwpetfindercom-arial-narrow-12-size);
+}
+.background12,
+.container15,
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.container15 {
+  flex: 1;
+  flex-direction: column;
+  padding: 3.312rem 0 0;
+  gap: 2.5rem;
+  min-width: 74.932rem;
+  max-width: 76.25rem;
+}
+.background12 {
+  margin-right: -0.125rem;
+  width: 84.75rem;
+  background-color: var(--color-chocolate);
+  flex-direction: row;
+  padding: 2.5rem 4.875rem;
+  max-width: 103%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--wwwpetfindercom-arial-narrow-14-upper-size);
+  color: var(--wwwpetfindercom-white);
+  font-family: var(--wwwpetfindercom-arial-narrow-12);
+}
+.all-trademarks-are,
+.petfindercom {
+  position: relative;
+  line-height: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.petfindercom {
+  width: 5.813rem;
+  white-space: nowrap;
+}
+.all-trademarks-are {
+  height: 1.25rem;
+  width: 23.875rem;
+  max-width: 100%;
+}
+.margin2,
+.paragraph {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.paragraph {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 24.062rem 0 0;
+  gap: 0.625rem;
+}
+.margin2 {
+  flex: 1;
+  flex-direction: column;
+  padding: 0 var(--padding-xl) 0 0;
+}
+.svg-icon1 {
+  width: 1.375rem;
+  height: 1.375rem;
+  position: relative;
+}
+.link-facebook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.container25,
+.link-facebook,
+.list5 {
+  align-items: flex-start;
+}
+.list5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.container25 {
+  width: 14.375rem;
+  flex-direction: column;
+}
+.background13,
+.container24,
+.container25,
+.root {
+  display: flex;
+  justify-content: flex-start;
+}
+.container24 {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: var(--padding-5xl) var(--padding-31xl);
+  box-sizing: border-box;
+  max-width: 76.25rem;
+  row-gap: 20px;
+}
+.background13,
+.root {
+  flex-direction: column;
+}
+.background13 {
+  margin-right: -0.125rem;
+  width: 84.75rem;
+  background-color: var(--color-chocolate);
+  align-items: center;
+  padding: 0 var(--padding-49xl);
+  box-sizing: border-box;
+  max-width: 103%;
+  flex-shrink: 0;
+  z-index: 1;
+  font-size: var(--wwwpetfindercom-arial-narrow-12-size);
+}
+.root {
+  width: 100%;
+  position: relative;
+  background-color: var(--wwwpetfindercom-white);
+  overflow: hidden;
+  align-items: flex-end;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--wwwpetfindercom-arial-narrow-16-upper-size);
+  color: var(--wwwpetfindercom-white);
+  font-family: var(--wwwpetfindercom-arial-narrow-12);
+}
+@media screen and (max-width: 1225px) {
+  .container7,
+  .header {
+    max-width: 100%;
+  }
+  .backgroundshadow {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+  .pet-card {
+    gap: 4.313rem;
+  }
+  .pets-content-wrapper {
+    padding-bottom: 7.125rem;
+    box-sizing: border-box;
+  }
+  .footer {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+  .container15 {
+    max-width: 100%;
+  }
+  .background12,
+  .container24 {
+    padding-left: var(--padding-20xl);
+    padding-right: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+  .container24 {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    max-width: 100%;
+  }
+  .background13 {
+    padding-left: var(--padding-15xl);
+    padding-right: var(--padding-15xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .pet-card-container-list {
+    padding-bottom: var(--padding-219xl);
+    box-sizing: border-box;
+  }
+  .pets-content-wrapper {
+    padding-right: 2.688rem;
+    padding-bottom: 4.625rem;
+    box-sizing: border-box;
+  }
+  .paragraph {
+    flex-wrap: wrap;
+    padding-right: 12rem;
+    box-sizing: border-box;
+  }
+  .margin2 {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container7 {
+    flex-wrap: wrap;
+  }
+  .purrfect-match {
+    font-size: 2.375rem;
+  }
+  .main-content {
+    gap: 1.313rem;
+  }
+  .pet-card {
+    gap: 2.125rem;
+  }
+  .pet-card-container-list {
+    padding-bottom: var(--padding-136xl);
+    box-sizing: border-box;
+  }
+  .pet-card-container-list-parent {
+    flex-wrap: wrap;
+  }
+  .pets-content-wrapper {
+    padding-right: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+  .container17 {
+    gap: 1.875rem;
+  }
+  .container15 {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .container8 {
+    flex-wrap: wrap;
+  }
+  .purrfect-match {
+    font-size: 1.813rem;
+  }
+  .at-purrfect-match-container {
+    font-size: var(--wwwpetfindercom-arial-narrow-16-upper-size);
+  }
+  .content {
+    padding-bottom: 4.375rem;
+    box-sizing: border-box;
+  }
+  .carlos,
+  .husky,
+  .robo,
+  .sherlyn,
+  .thiva,
+  .tom {
+    font-size: var(--wwwpetfindercom-arial-narrow-16-upper-size);
+    line-height: 1.125rem;
+  }
+  .pet-card {
+    gap: 1.063rem;
+  }
+  .bolt,
+  .doggo,
+  .kit,
+  .oggy,
+  .smith {
+    font-size: var(--wwwpetfindercom-arial-narrow-16-upper-size);
+    line-height: 1.125rem;
+  }
+  .pets-content-wrapper {
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+  }
+  .background12 {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .paragraph {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

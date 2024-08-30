@@ -1,7 +1,8 @@
 from flask import Flask, render_template,request, url_for,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-from werkzeug.security import check_password_hash
+from werkzeug.utils import secure_filename
+import os
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///default.db'
 app.config["SQLALCHEMY_BINDS"] = {
@@ -66,38 +67,21 @@ class Dog(db.Model):
 with app.app_context():
     db.create_all()
 
+UPLOAD_FOLDER = 'static/uploads/'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # Limit upload size to 16 MB
+ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'gif'}
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 @app.route('/')
 def home():
     return render_template("index.html")
 
-
-
-def login():
-    if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['password']
-
-        # Fetch the user by email
-        user = Users.query.filter_by(email=email).first()
-
-        if user and check_password_hash(user.password, password):
-            return redirect('/')
-        else:
-            return render_template('log-reg.html', error='Invalid email or password')
-
-
-@app.route('/login',methods=['GET','POST'])
-def sign_up():
-    if request.method == 'POST':
-        username = request.form['username']
-        email = request.form['email']
-        password = request.form['password']
-
-        new_user = Users(username=username,email=email, password=password)
-        db.session.add(new_user)
-        db.session.commit()
-        return redirect(url_for('home'))
-    return render_template("log-reg.html")
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
 
 @app.route('/map')
 def map():
@@ -107,6 +91,10 @@ def map():
 def petsitter():
     return render_template("petsitter.html")
 
+@app.route('/Find_Your_Match')
+def uslonely():
+    return render_template('findyourmatch.html')
+
 @app.route('/adoptpet/Dogs')
 def adoptdogs():
     return render_template('dog.html')
@@ -114,6 +102,34 @@ def adoptdogs():
 @app.route('/adoptpet/Cats')
 def adoptcats():
     return render_template('cat.html')
+
+@app.route('/add_dog', methods=['GET', 'POST'])
+def add_dog():
+    if request.method == 'POST':
+        name = request.form['name']
+        age = request.form['age']
+        breed = request.form['breed']
+        description = request.form['description']
+        image = request.files.get('image')
+
+        if image and allowed_file(image.filename):
+            filename = secure_filename(image.filename)
+            image_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            image.save(image_path)
+        else:
+            filename = None
+
+        new_dog = Dog(name=name, age=age, breed=breed, description=description, image_filename=filename)
+        db.session.add(new_dog)
+        db.session.commit()
+        return redirect('/dogs')
+    
+    return render_template('add_dog.html')
+
+@app.route('/dogs')
+def list_dogs():
+    dogs = Dog.query.all()
+    return render_template('dogs.html', dogs=dogs)
 
 @app.route('/dog/<int:dog_id>')
 def dog_details(dog_id):

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='adminglobal.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='adminindex.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="root">
+      <div class="admin-header-wrapper">
+        <div class="admin-header">
+          <textarea
+            class="admin-title"
+            placeholder="ADMIN
+"
+            rows="{10}"
+            cols="{12}"
+          >
+          </textarea>
+          <div class="management">
+            <div class="manage-pets">Manage Pets</div>
+            <div class="manage-adoptions">Manage Adoptions</div>
+          </div>
+        </div>
+      </div>
+      <div class="primary-navigation">
+        <textarea
+          class="pet-actions"
+          placeholder="Add New Pet"
+          rows="{12}"
+          cols="{14}"
+        >
+        </textarea>
+      </div>
+      <div class="primary-navigation">
+        <textarea
+          class="pet-actions"
+          placeholder="Edit Pet Information"
+          rows="{12}"
+          cols="{14}"
+        >
+        </textarea>
+      </div>
+      <div class="logout-header-parent">
+        <div class="logout-header">
+          <a class="logout">LOGOUT</a>
+        </div>
+        <div class="records-header-wrapper">
+          <textarea
+            class="records-header"
+            placeholder="Delete Pet Records"
+            rows="{12}"
+            cols="{14}"
+          >
+          </textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
