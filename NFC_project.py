@@ -126,10 +126,39 @@ def add_dog():
     
     return render_template('add_dog.html')
 
+@app.route('/add_cat', methods=['GET', 'POST'])
+def add_cat():
+    if request.method == 'POST':
+        name = request.form['name']
+        age = request.form['age']
+        breed = request.form['breed']
+        description = request.form['description']
+        image = request.files.get('image')
+
+        if image and allowed_file(image.filename):
+            filename = secure_filename(image.filename)
+            image_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            image.save(image_path)
+        else:
+            filename = None
+
+        new_cat = Cat(name=name, age=age, breed=breed, description=description, image_filename=filename)
+        db.session.add(new_cat)
+        db.session.commit()
+        return redirect('/cats')
+    
+    # Return the form for adding a cat if the request method is GET
+    return render_template('add_cat.html')
+
 @app.route('/dogs')
 def list_dogs():
     dogs = Dog.query.all()
     return render_template('dogs.html', dogs=dogs)
+
+@app.route('/cats')
+def list_cats():
+    cats = Cat.query.all()
+    return render_template('cats.html', cats=cats)
 
 @app.route('/dog/<int:dog_id>')
 def dog_details(dog_id):

@@ -1,158 +1,426 @@
-/* styles.css */
+/* General Body Styles */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Container Styles */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: #007bff; /* Blue color */
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Input Field Styles */
+.input-field,
+.textarea-field,
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.textarea-field {
+  height: 70px; /* Set height for textarea */
+}
+
+/* Submit Button Styles */
+.submit-button {
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  color: #007bff; /* Blue color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Container for Animal Items */
+.animal-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center align items horizontally */
+  gap: 20px; /* Space between items */
+  padding: 0 20px; /* Padding around container */
+}
+
+/* Styles for Each Animal Item */
+.animal-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px; /* Width of each item */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Relative positioning for absolute positioning of delete button */
+}
+
+/* Styles for Animal Images */
+.animal-image {
+  width: 100%; /* Make image width 100% of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+  object-fit: cover; /* Ensure the image covers the container */
+  max-height: 200px; /* Restrict maximum height */
+}
+
+/* Link Styling */
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Link to Add a New Animal */
+a[href="/add_cat"],
+a[href="/add_dog"] {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  padding: 5px; /* Smaller padding */
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px; /* Smaller font size */
+}
+
+a[href="/add_cat"]:hover,
+a[href="/add_dog"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Delete Button Styling */
+.delete-button {
+  position: absolute; /* Position delete button relative to animal-item */
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545; /* Red background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px; /* Smaller font size */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  color: #007bff; /* Blue color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Container for Dog Items */
+.dog-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center align items horizontally */
+  gap: 20px; /* Space between items */
+  padding: 0 20px; /* Padding around container */
+}
+
+/* Styles for Each Dog Item */
+.dog-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px; /* Width of each item */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Dog Images */
+.dog-image {
+  width: 100%; /* Make image width 100% of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+  object-fit: cover; /* Ensure the image covers the container */
+  max-height: 200px; /* Restrict maximum height */
+}
+
+/* Link Styling */
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Link to Add a New Dog */
+a[href="/add_dog"] {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a[href="/add_dog"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 header {
-    background-color: #f27629;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+  background-color: #f27629;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 header h1 {
-    font-size: 36px;
-    margin: 0;
+  font-size: 36px;
+  margin: 0;
 }
 
 header p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* Existing styles... */
 
 /* Style for the container to ensure vertical alignment */
 .container {
-    display: flex;
-    flex-direction: column; /* Ensure children are stacked vertically */
-    align-items: center; /* Center-align children horizontally */
-    justify-content: center; /* Center-align children vertically */
-    max-width: 600px; /* Adjust based on your design */
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Ensure children are stacked vertically */
+  align-items: center; /* Center-align children horizontally */
+  justify-content: center; /* Center-align children vertically */
+  max-width: 600px; /* Adjust based on your design */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 /* Style for the 'Back to Home' button */
 .button {
-    background-color: #007bff; /* Blue color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px; /* Add margin to separate from other elements */
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Add margin to separate from other elements */
 }
 
 .button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
-
-
 .adopt-button {
-    background-color: #ff4d4d; /* Pinkish-red color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  background-color: #ff4d4d; /* Pinkish-red color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .adopt-button .heart-icon {
-    font-size: 24px;
-    margin-right: 10px;
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 .adopt-button:hover {
-    background-color: #ff1a1a; /* Darker pinkish-red on hover */
+  background-color: #ff1a1a; /* Darker pinkish-red on hover */
 }
 
-
-
 .book-cover {
-    flex: 1; /* Adjust the width of the left column */
-    padding: 20px;
+  flex: 1; /* Adjust the width of the left column */
+  padding: 20px;
 }
 
 .book-details {
-    flex: 2; /* Adjust the width of the right column */
-    padding: 20px;
+  flex: 2; /* Adjust the width of the right column */
+  padding: 20px;
 }
 
 main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .book-details h2 {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .book-details p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 20px;
 }
 
 .book-cover img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #ddd;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f27629;
-    color: #fff;
-    font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f27629;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  color: #333; /* Blue color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px; /* Center align the list */
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Link to Add a New Dog */
+a[href="/add_dog"] {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a[href="/add_dog"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
+  header h1 {
+    font-size: 28px;
+  }
 
-    header p {
-        font-size: 16px;
-    }
+  header p {
+    font-size: 16px;
+  }
 
-    main {
-        padding: 10px;
-    }
+  main {
+    padding: 10px;
+  }
 
-    .book-details h2 {
-        font-size: 20px;
-    }
+  .book-details h2 {
+    font-size: 20px;
+  }
 
-    .book-details p {
-        font-size: 16px;
-    }
+  .book-details p {
+    font-size: 16px;
+  }
 }
