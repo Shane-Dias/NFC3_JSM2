@@ -146,11 +146,8 @@ def thank_you():
     return render_template('thank_you.html')
 
 @app.route('/adopt/<int:animal_id>', methods=['POST'])
-def adopt_animal():
-    # Add your adoption logic here
-    # For example, you might want to mark the animal as adopted or add an entry in a history table
-    # This is a placeholder implementation
-    return redirect('/thank_you')
+def adopt_animal(animal_id):
+    return redirect(url_for('thank_you'))
 
 @app.route('/shelterInformation')
 def shelterinfo():
