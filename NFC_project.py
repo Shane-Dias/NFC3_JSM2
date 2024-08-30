@@ -79,6 +79,20 @@ def allowed_file(filename):
 def home():
     return render_template("index.html")
 
+@app.route("/login", methods=['GET','POST'])
+def sign_up():
+    if request.method == 'POST':
+        username = request.form['username']
+        email = request.form['email']
+        password = request.form['password']
+
+        new_user = Users(username=username, email=email, password=password)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect(url_for('home'))
+    
+    return render_template("log-reg.html")
+
 @app.route("/admin")
 def admin():
     return render_template("admin.html")
