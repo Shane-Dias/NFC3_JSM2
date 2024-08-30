@@ -18,6 +18,7 @@
     />
   </head>
   <body>
+    <script src="index.js"></script>
     <div class="container">
       <img
         class="container-icon"
@@ -126,6 +127,26 @@
                     target="_blank"
                     >Other Types of Pets</a
                   >
+                </div>
+              </div>
+              <div class="item4">
+                <div class="link4">
+                  <a class="adopt-or-get" href="{{ url_for('map') }}">See Nearby Vets</a>
+                  <script src="{{ url_for('static', filename='index.js') }}"></script>
+                </div>
+              </div>
+              <div id="map-modal" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <h2>Nearby Vets</h2>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
                 </div>
               </div>
             </div>
